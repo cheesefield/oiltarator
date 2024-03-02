@@ -1,8 +1,35 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 function About() {
   return (
     <div className="main">
+      <Helmet>
+        <title>OilTarator • About</title>
+        <meta name="title" content="OilTarator • About" />
+        <meta name="description" content="This is OilTarator about page." />
+        <meta property="og:url" content="https://oiltarator.com/about" />
+        <meta property="og:title" content="OilTarator • About" />
+        <meta
+          property="og:description"
+          content="This is OilTarator about page."
+        />
+        <meta
+          property="og:image"
+          content="https://oiltarator.com/images/share.png"
+        />
+
+        <meta property="twitter:url" content="https://oiltarator.com/about" />
+        <meta property="twitter:title" content="OilTarator • About" />
+        <meta
+          property="twitter:description"
+          content="This is OilTarator about page."
+        />
+        <meta
+          property="twitter:image"
+          content="https://oiltarator.com/images/share.png"
+        />
+      </Helmet>
       <h1>About</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo,
