@@ -77,7 +77,6 @@ function ErrorPage(props) {
                 fontSize: "20px",
                 marginBottom: "20px",
               }}
-              onClick={changeLanguage}
             >
               HOME
             </h3>

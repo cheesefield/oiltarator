@@ -1,8 +1,35 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 function Contact() {
   return (
     <div className="main">
+      <Helmet>
+        <title>OilTarator • Contact</title>
+        <meta name="title" content="OilTarator • Contact" />
+        <meta name="description" content="This is OilTarator contact page." />
+        <meta property="og:url" content="https://oiltarator.com/contact" />
+        <meta property="og:title" content="OilTarator • Contact" />
+        <meta
+          property="og:description"
+          content="This is OilTarator contact page."
+        />
+        <meta
+          property="og:image"
+          content="https://oiltarator.com/images/share.png"
+        />
+
+        <meta property="twitter:url" content="https://oiltarator.com/contact" />
+        <meta property="twitter:title" content="OilTarator • contact" />
+        <meta
+          property="twitter:description"
+          content="This is OilTarator contact page."
+        />
+        <meta
+          property="twitter:image"
+          content="https://oiltarator.com/images/share.png"
+        />
+      </Helmet>
       <form
         id="contact-form"
         method="POST"

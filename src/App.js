@@ -6,11 +6,6 @@ import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Products from "./pages/Products";
-// Pages DE
-import HomepageDe from "./pages/Homepage";
-import AboutDe from "./pages/About";
-import ContactDe from "./pages/Contact";
-import ProductsDe from "./pages/Products";
 // Components
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
@@ -25,16 +20,9 @@ function App() {
         <Nav setLanguage={setLanguage} language={language} />
         <Routes>
           <Route exact path="/" element={<Homepage />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/products" element={<Products />} />
-          <Route exact path="/de" element={<HomepageDe />} />
-          <Route exact path="/de/about" element={<AboutDe />} />
-          <Route exact path="/de/contact" element={<ContactDe />} />
-          <Route exact path="/de/products" element={<ProductsDe />} />
           <Route
             path="*"
-            element={ErrorPage}
+            element={<ErrorPage />}
             setLanguage={setLanguage}
             language={language}
           />

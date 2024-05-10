@@ -50,9 +50,6 @@ nav ul li a {
   border-radius: 30px;
   transition: 0.6s;
 }
-nav.sticky ul li a {
-  color: #777;
-}
 nav ul.active {
   opacity: 1;
   height: 100vh;
@@ -73,22 +70,13 @@ nav .menu-btn__burger,
 nav .menu-btn {
   display: none;
 }
-nav.sticky .menu-btn__burger {
-  color: var(--white);
-}
-nav.sticky,
-nav.sticky .progress-container {
-  background-color: #333;
-}
 .body .progress-container {
   display: none;
 }
 nav .menu-btn__burger {
   color: #333;
 }
-nav.sticky span.language a {
-  color: var(--white);
-}
+
 .nav-icons {
   margin-right: 8px;
 }
@@ -108,10 +96,6 @@ nav.sticky span.language a {
   background: #333;
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
-}
-nav.sticky .menu-btn__burger::before,
-nav.sticky .menu-btn__burger::after {
-  background-color: var(--white);
 }
 .menu-btn__burger::before {
   transform: translateY(-10px);
@@ -142,7 +126,6 @@ nav.sticky .menu-btn__burger::after {
 }
 .main {
   display: block;
-  text-align: -webkit-center;
   margin: 0 2rem;
   width: 95vw;
   margin: 0 auto;
@@ -151,8 +134,20 @@ nav.sticky .menu-btn__burger::after {
 .product img {
   width: 200px;
 }
+.center {
+  display: block;
+  text-align: center;
+}
+iframe {
+  width: 80%;
+  height: 400px;
+  margin: 0;
+}
 h1 {
   text-align: center;
+}
+ul li {
+  list-style: square;
 }
 .products {
   display: inline-flex;
@@ -162,13 +157,15 @@ h1 {
   flex-wrap: wrap;
 }
 .product {
-  background-color: aqua;
+  background-color: var(--blue);
+  color: white;
   padding: 1.5rem;
   width: max-content;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 2rem 1rem;
+  text-align: center;
 }
 .footer {
   text-align: center;
@@ -202,10 +199,15 @@ h1 {
     align-items: flex-start;
     z-index: 100;
   }
+  nav img {
+    display: flex;
+    transform: translate(0%, 25%);
+  }
   nav ul {
     width: 100%;
     flex-direction: column;
     height: 0;
+    padding: 0;
     top: -300px;
     opacity: 0;
     transition: 0.7s;
@@ -253,13 +255,7 @@ nav ul li .nav-active {
   border: 3px solid;
   border-radius: 30px;
 }
-nav.sticky ul li a:hover {
-  border: 3px solid;
-  border-radius: 30px;
-}
-nav.sticky .menu-btn__burger {
-  background-color: var(--white);
-}
+
 @media screen and (max-width: 600px) {
   .row .column {
     flex: 100%;
