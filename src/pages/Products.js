@@ -1,7 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import sunflower_oil from "../images/sunflower_oil.jpg";
-import "../style.css";
 
 function Products() {
   return (

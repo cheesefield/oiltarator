@@ -1,7 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import "../i18.js";
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t } = useTranslation();
+
   return (
     <div className="main">
       <Helmet>
@@ -30,66 +34,21 @@ function Contact() {
           content="https://oiltarator.com/images/share.png"
         />
       </Helmet>
-      <form
-        id="contact-form"
-        method="POST"
-        action="https://formspree.io/f/meqplbdo"
-      >
-        <h2 className="contact-h2">Contact us</h2>
-        <div className="contact">
-          <div className="row100">
-            <div className="col">
-              <div className="inputBox">
-                <input type="text" name="firstName" required="required" />
-                <span className="text">First name</span>
-                <span className="line"></span>
-              </div>
-            </div>
-            <div className="col">
-              <div className="inputBox">
-                <input type="text" name="lastName" required="required" />
-                <span className="text">Last name</span>
-                <span className="line"></span>
-              </div>
-            </div>
-          </div>
-          <div className="row100">
-            <div className="col">
-              <div className="inputBox">
-                <input type="text" name="email" required="required" />
-                <span className="text">Email</span>
-                <span className="line"></span>
-              </div>
-            </div>
-            <div className="col">
-              <div className="inputBox">
-                <input type="text" name="phoneNumber" required="required" />
-                <span className="text">Phone number</span>
-                <span className="line"></span>
-              </div>
-            </div>
-          </div>
-          <div className="row100">
-            <div className="col">
-              <div className="inputBox textarea">
-                <textarea
-                  required="required"
-                  cols="30"
-                  rows="10"
-                  name="message"
-                ></textarea>
-                <span className="text">Write your message here...</span>
-                <span className="line"></span>
-              </div>
-            </div>
-          </div>
-          <div className="row100 submit">
-            <div className="col">
-              <input type="submit" value="Send" />
-            </div>
-          </div>
-        </div>
-      </form>
+      <div className="center">
+        <h1>{t("contacth1")}</h1>
+        <iframe
+          title="maps"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Lihovarsk%C3%A1%20642/16,%20718%2000%20Ostrava%20-%20Kun%C4%8Di%C4%8Dky,%20%C4%8Cesko+(OilTarator%20s.r.o)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        >
+          <a href="https://www.gps.ie/">gps trackers</a>
+        </iframe>
+      </div>
+      <div className="contact-info">
+        <h2 className="contact">{t("contact")}</h2>
+        <span>{t("ceo")}: Rostislav Sikora</span>
+        <span>{t("email")}: oiltarator@email.cz</span>
+        <span>{t("phone")}: +420 724 042 450</span>
+      </div>
     </div>
   );
 }

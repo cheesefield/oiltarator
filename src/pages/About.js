@@ -1,7 +1,11 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import "../i18.js";
+import { useTranslation } from "react-i18next";
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <div className="main">
       <Helmet>
@@ -30,35 +34,7 @@ function About() {
           content="https://oiltarator.com/images/share.png"
         />
       </Helmet>
-      <h1>About us</h1>
-      <p>
-        We are a trading company operating extensively in the technical
-        vegetable oil trade industry.
-      </p>
-      <p>
-        Our product database includes oils in a wide range of species, from pure
-        vegetable oils:
-      </p>
-      <ul>
-        <li>soybean</li>
-        <li>sunflower</li>
-        <li>rapeseed</li>
-      </ul>
-      <p>
-        to oils with increased acidity, and mixtures of vegetable oils prepared
-        especially at the customer's request, under specific parameters.
-      </p>
-      <p>
-        Oiltarator s.r.o. has modern technical facilities with a storage
-        capacity of up to 1,300 tons. Our base is located in Ostrava, approx. 20
-        km to the Polish border, close to the motorway exit, which makes
-        organizing transport much easier. As a company, we also provide goods
-        storage and reloading services.
-      </p>
-      <p>
-        We invite you to cooperate. We will be happy to answer all your
-        questions.
-      </p>
+      <h1>{t("headline")}</h1>
       <div className="center">
         <h2>Where you can find us?</h2>
         <iframe

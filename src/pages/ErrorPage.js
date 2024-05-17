@@ -3,20 +3,16 @@ import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
 
 function ErrorPage(props) {
-  const changeLanguage = () => props.setLanguage(!props.language);
   return (
     <div>
       <Helmet>
         <title>Error 404(Page Not Found)</title>
-        <meta name="title" content="CheeseField" />
+        <meta name="title" content="OilTarator" />
         <meta
           name="description"
-          content="Vypadá to, že jsi se ztratil, ale pokud tohle čteš, tak veřím, že najdeš cestu ven."
+          content="Looks like you got lost. Let´s find a way out"
         />
-        <meta
-          property="og:url"
-          content="https://cheesefield-kostich02.vercel.app/*"
-        />
+        <meta property="og:url" content="https://www.oiltarator.com/*" />
         <meta property="og:title" content="Error 404(Page Not Found)" />
         <meta
           property="og:description"
@@ -24,21 +20,18 @@ function ErrorPage(props) {
         />
         <meta
           property="og:image"
-          content="https://cheesefield.vercel.app/images/share.png"
+          content="https://www.oiltarator.com/images/share.png"
         />
 
-        <meta
-          property="twitter:url"
-          content="https://cheesefield-kostich02.vercel.app/*"
-        />
+        <meta property="twitter:url" content="https://www.oiltarator.com/*" />
         <meta property="twitter:title" content="Error 404(Page Not Found)" />
         <meta
           property="twitter:description"
-          content="Vypadá to, že jsi se ztratil, ale pokud tohle čteš, tak veřím, že najdeš cestu ven."
+          content="Looks like you got lost. Let´s find a way out"
         />
         <meta
           property="twitter:image"
-          content="https://cheesefield.vercel.app/images/share.png"
+          content="https://www.oiltarator.com/images/share.png"
         />
       </Helmet>
       <main className="error_page">

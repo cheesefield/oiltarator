@@ -1,7 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import hlavni_brana from "../images/hlavni_brana.jpeg";
+import "../i18.js";
+import { useTranslation } from "react-i18next";
 
 function Homepage() {
+  const { t } = useTranslation();
+
   return (
     <div className="main">
       <Helmet>
@@ -30,10 +35,21 @@ function Homepage() {
           content="https://oiltarator.com/images/share.png"
         />
       </Helmet>
-      <h1>Home</h1>
-      <div className="homepage-center">
-        <p>Website in the making</p>
-        <p>Opening soon</p>
+      <div className="brana">
+        <img src={hlavni_brana} alt="hlavni brana"></img>
+      </div>
+      <div className="homepage">
+        <h1>{t("homepage")}</h1>
+        <p>{t("description1")}</p>
+        <p>{t("description2")}</p>
+        <ul>
+          <li>{t("oil1")}</li>
+          <li>{t("oil2")}</li>
+          <li>{t("oil3")}</li>
+        </ul>
+        <p>{t("description3")}</p>
+        <p>{t("description4")}</p>
+        <p>{t("description5")}</p>
       </div>
     </div>
   );
