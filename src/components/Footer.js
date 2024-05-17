@@ -5,10 +5,13 @@ import { useTranslation } from "react-i18next";
 
 function Footer() {
   const { t } = useTranslation();
+  let currentYear = new Date().getFullYear();
 
   return (
     <div className="footer">
-      <p>{t("footer")}</p>
+      <p>
+        {t("footer")} &copy; {currentYear}
+      </p>
     </div>
   );
 }
