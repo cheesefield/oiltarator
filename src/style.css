@@ -312,6 +312,9 @@ span {
   .details p {
     font-size: 3.5vw;
   }
+  .homepage-center {
+  font-size: 1.5rem;
+}
 }
 @media screen and (max-width: 584px) {
   .error_page section {
