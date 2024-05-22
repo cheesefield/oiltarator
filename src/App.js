@@ -6,6 +6,7 @@ import "./style.css";
 import Homepage from "./pages/Homepage";
 // import About from "./pages/About";
 import Contact from "./pages/Contact";
+import Gallery from "./pages/Gallery";
 // import Products from "./pages/Products";
 // Components
 import Nav from "./components/Nav";
@@ -23,6 +24,7 @@ function App() {
           <Route exact path="/" element={<Homepage />} />
           {/* <Route exact path="/about" element={<About />} /> */}
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/gallery" element={<Gallery />} />
           {/* <Route exact path="/products" element={<Products />} /> */}
           <Route
             path="*"

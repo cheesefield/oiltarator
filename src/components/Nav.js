@@ -71,12 +71,15 @@ function Nav() {
           </li> */}
           <li className="nav">
             <NavLink exact to="/contact" onClick={closeMobileMenu}>
-              {t("contact")}
+              {t("nav2")}
             </NavLink>
           </li>
-          <span>
-            <LanguageSelector />
-          </span>
+          <li className="nav">
+            <NavLink exact to="/gallery" onClick={closeMobileMenu}>
+              {t("nav3")}
+            </NavLink>
+          </li>
+          <LanguageSelector />
         </ul>
         <div
           onClick={handleClick}

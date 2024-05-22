@@ -3,6 +3,10 @@ import { Helmet } from "react-helmet";
 import "../i18.js";
 import { useTranslation } from "react-i18next";
 
+// font awesome icons
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+
 function Contact() {
   const { t } = useTranslation();
 
@@ -43,11 +47,19 @@ function Contact() {
           <a href="https://www.gps.ie/">gps trackers</a>
         </iframe>
       </div>
-      <div className="contact-info">
-        <h2 className="contact">{t("contact")}</h2>
-        <span>{t("ceo")}: Rostislav Sikora</span>
-        <span>{t("email")}: oiltarator@email.cz</span>
-        <span>{t("phone")}: +420 724 042 450</span>
+      <div className="contact-section">
+        <div className="contact-info">
+          <h2 className="contact">{t("contact")}</h2>
+          <p>{t("message")}</p>
+          <span>{t("ceo")}: Rostislav Sikora</span>
+          <span>
+            <FaEnvelope /> oiltarator@email.cz
+          </span>
+          <span>
+            <FaPhoneAlt /> +420 724 042 450
+          </span>
+        </div>
+        <div className="form"></div>
       </div>
     </div>
   );

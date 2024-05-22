@@ -15,6 +15,7 @@ nav {
   transition: 0.6s;
   padding: 15px 30px;
   background-color: var(--blue);
+  box-shadow: 0 5px 15px rgba(55, 55, 55, 1);
   color: var(--black);
   user-select: none;
   font-family: Optima, sans-serif;
@@ -85,9 +86,8 @@ nav .menu-btn {
 nav .menu-btn__burger {
   color: #333;
 }
-
-.nav-icons {
-  margin-right: 8px;
+nav .btn-container {
+  margin-left: 15px;
 }
 .menu-btn__burger {
   width: 30px;
@@ -136,14 +136,33 @@ nav .menu-btn__burger {
 .brana {
   display: flex;
   position: relative;
+  display: flex;
+  position: relative;
   margin-left: -2.65%;
+  margin-top: 4px;
   align-content: center;
   width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .brana img {
   display: block;
   position: relative;
   width: 100vw;
+}
+.homepage {
+  position: absolute;
+  font-size: 1.5vw;
+  height: 85%;
+  background-color: rgba(245, 254, 255, 0.6);
+  box-shadow: 0 5px 15px rgba(99, 176, 184, 1);
+  border: 5px solid rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  width: 85%;
+  height: 80%;
+  padding: 25px 10px;
+  text-align: center;
 }
 .center {
   display: block;
@@ -156,7 +175,12 @@ iframe {
 }
 h1 {
   text-align: center;
-  font-size: 2.5rem;
+}
+.homepage h3 {
+  font-weight: normal;
+}
+span {
+  font-size: 1.1rem;
 }
 ul li {
   list-style: square;
@@ -183,6 +207,77 @@ button.selected {
   background-color: #555555;
   color: var(--white);
 }
+.gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 30px);
+  box-sizing: border-box;
+  max-width: 300px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  align-content: center;
+  z-index: 1;
+  left: 0;
+  top: 40px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 550px;
+  border: 5px solid var(--blue);
+}
+
+.close {
+  position: relative;
+  bottom: 10px;
+  left: 90%;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
 .products {
   display: inline-flex;
   align-items: center;
@@ -205,10 +300,13 @@ button.selected {
   display: flex;
   flex-direction: column;
   margin-left: 100px;
-  margin-top: 25px;
+  margin-top: 40px;
 }
-span {
-  font-size: 1.1rem;
+.contact-info span {
+  margin: 5px 0;
+}
+span svg {
+  margin-right: 10px;
 }
 .footer {
   text-align: center;
@@ -258,7 +356,7 @@ span {
   nav ul li {
     display: flex;
     color: #777;
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
   nav ul li a {
     margin: 0.3rem 1rem;
@@ -284,10 +382,12 @@ span {
   }
   .btn-container {
     margin-top: 10vh;
+    margin-left: 0;
   }
   .contact-info {
     align-items: center;
-    margin: 0;
+    text-align: center;
+    margin-left: 0;
   }
 }
 
@@ -295,26 +395,24 @@ span {
   .row .column {
     flex: 100%;
   }
+  .gallery-item {
+    flex-basis: calc(50% - 30px);
+  }
 }
 @media screen and (max-width: 584px) {
   h1 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   h2 {
-    font-size: 5.5vw;
+    font-size: 4.5vw;
   }
   h3 {
     font-size: 3vw;
   }
-  p {
-    font-size: 0.7rem;
+  .homepage {
+    align-content: center;
+    padding: 0;
   }
-  .details p {
-    font-size: 3.5vw;
-  }
-  .homepage-center {
-  font-size: 1.5rem;
-}
 }
 @media screen and (max-width: 584px) {
   .error_page section {

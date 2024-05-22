@@ -37,20 +37,20 @@ function Homepage() {
       </Helmet>
       <div className="brana">
         <img src={hlavni_brana} alt="hlavni brana"></img>
+        <div className="homepage">
+          <h1>{t("homepage")}</h1>
+          <h3>{t("description1")}</h3>
+        </div>
       </div>
-      <div className="homepage">
-        <h1>{t("homepage")}</h1>
-        <p>{t("description1")}</p>
-        <p>{t("description2")}</p>
-        <ul>
-          <li>{t("oil1")}</li>
-          <li>{t("oil2")}</li>
-          <li>{t("oil3")}</li>
-        </ul>
-        <p>{t("description3")}</p>
-        <p>{t("description4")}</p>
-        <p>{t("description5")}</p>
-      </div>
+      <p>{t("description2")}</p>
+      <ul>
+        <li>{t("oil1")}</li>
+        <li>{t("oil2")}</li>
+        <li>{t("oil3")}</li>
+      </ul>
+      <p>{t("description3")}</p>
+      <p>{t("description4")}</p>
+      <p>{t("description5")}</p>
     </div>
   );
 }
