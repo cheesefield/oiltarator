@@ -51,7 +51,7 @@ i18next
           description3:
             "až po oleje se zvýšenou hodnotou mastných kyselin. Umíme připravit mix olejů rostlinných, dle požadovaných parametrů zákazníka. ",
           description4:
-            "Oiltarator s.r.o. využívá moderní technické vybavení se skladovou kapacitou až 1 300 tun. Naše firma se nachází v Ostravě, 20 km od hranic z Polska poblíž sjezdu z dálnicemi dobrém dopravním dosahu, což velice zjednodušuje organizaci transportu. Zabýváme se také uskladňováním olejů a jejich překládkou. ",
+            "Oiltarator s.r.o. využívá moderní technické vybavení se skladovou kapacitou až 1 300 tun. Naše firma se nachází v Ostravě, 20 km od hranic s Polskem poblíž sjezdu z dálnice v dobrém dopravním dosahu, což velmi zjednodušuje organizaci transportu. Zabýváme se také uskladňováním olejů a jejich překládkou. ",
           description5:
             "Těšíme se na spolupráci. Rádi zodpovíme všechny Vaše dotazy.",
           oil1: "sojový",
@@ -65,7 +65,7 @@ i18next
           footer: "Vytvořil CheeseField",
           ceo: "Výkonný ředitel",
           message:
-            "Jestli máte zájem o nějáké z našich služeb nebo máte jakýkoliv dotaz, neváhejte se nám ozvat. Rádi zodpovíme všechny Vaše dotazy.",
+            "Jestli máte zájem o nějaké z našich služeb nebo máte jakýkoliv dotaz, neváhejte se nám ozvat. Rádi zodpovíme všechny Vaše dotazy.",
         },
       },
       pl: {
