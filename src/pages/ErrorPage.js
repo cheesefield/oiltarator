@@ -1,8 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { NavLink } from "react-router-dom";
+import "../css/errorPage.css"; // css
+import oil_factory from "../images/oil_factory.jpg";
+import { useTranslation } from "react-i18next";
 
-function ErrorPage(props) {
+function ErrorPage() {
+  const { t } = useTranslation();
+  const { line1, line2, button } = t("errorpage");
+
   return (
     <div>
       <Helmet>
@@ -35,44 +41,13 @@ function ErrorPage(props) {
         />
       </Helmet>
       <main className="error_page">
-        <section
-          style={{
-            position: "absolute",
-            top: "40%",
-            padding: "20px",
-            paddingBottom: "0",
-            left: "50%",
-            transform: "translate(-50%,-50%)",
-            display: "flex",
-            flexDirection: "column",
-            width: "fit-content",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            margin: "0",
-          }}
-        >
-          <p
-            style={{
-              fontSize: "20px",
-              marginBottom: "10px",
-            }}
-          >
-            This page doesn´t exist, go back
-          </p>
+        <img src={oil_factory} alt="Oil factory background" />
+        <section>
+          <h1>ERROR 404</h1>
+          <p>{line1}</p>
+          <p>{line2}</p>
           <NavLink to="/">
-            <h3
-              style={{
-                textAlign: "center",
-                padding: "10px",
-                color: "#333",
-                backgroundColor: "#aaa",
-                fontSize: "20px",
-                marginBottom: "20px",
-              }}
-            >
-              HOME
-            </h3>
+            <h3>{button}</h3>
           </NavLink>
         </section>
       </main>

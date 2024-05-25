@@ -66,15 +66,15 @@ nav ul.active {
   top: -49px;
   transition: 0.7s;
 }
-
-span.language a {
-  text-transform: uppercase;
-  color: var(--black);
-  margin-left: 15px;
-  transition: 0.6s;
+nav .fa-globe {
+  height: 1.5em;
+  width: 1.5em;
+  cursor: pointer;
+  margin-left: 10px;
 }
-span.language a:hover {
-  text-decoration: none;
+nav .fa-globe:hover {
+  color: rgba(245, 254, 255, 0.6);
+  transition: 0.7s;
 }
 nav .menu-btn__burger,
 nav .menu-btn {
@@ -87,7 +87,16 @@ nav .menu-btn__burger {
   color: #333;
 }
 nav .btn-container {
+  display: none;
+}
+nav .btn-container-open {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: -15px;
+  flex-direction: column;
   margin-left: 15px;
+  transition: 0.5s;
 }
 .menu-btn__burger {
   width: 30px;
@@ -128,7 +137,7 @@ nav .btn-container {
   margin: 0 2rem;
   width: 95vw;
   margin: 0 auto;
-  padding: 108px 0 10px;
+  padding: 115px 0 10px;
 }
 .product img {
   width: 200px;
@@ -139,7 +148,6 @@ nav .btn-container {
   display: flex;
   position: relative;
   margin-left: -2.65%;
-  margin-top: 4px;
   align-content: center;
   width: 100vw;
   flex-direction: column;
@@ -159,9 +167,9 @@ nav .btn-container {
   box-shadow: 0 5px 15px rgba(99, 176, 184, 1);
   border: 5px solid rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  width: 85%;
-  height: 80%;
-  padding: 25px 10px;
+  width: 60%;
+  height: 60%;
+  padding: 25px 25px;
   text-align: center;
 }
 .center {
@@ -176,6 +184,10 @@ iframe {
 h1 {
   text-align: center;
 }
+.homepage h1 {
+  margin: 0;
+  margin-top: 10px;
+}
 .homepage h3 {
   font-weight: normal;
 }
@@ -189,27 +201,26 @@ button {
   background-color: var(--white);
   border: none;
   color: var(--black);
-  border: 2px solid #555555;
+  border: 2px solid #555;
   padding: 7px 5px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 13px;
-  margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
 button:hover {
-  background-color: #555555;
+  background-color: #555;
   color: var(--white);
 }
 button.selected {
-  background-color: #555555;
+  background-color: #555;
   color: var(--white);
 }
-.gallery {
-  padding: 20px;
-  text-align: center;
+button.selected:hover {
+  background-color: rgba(99, 176, 184, 0.6);
+  color: var(--white);
 }
 
 .gallery h1 {
@@ -356,7 +367,7 @@ span svg {
   nav ul li {
     display: flex;
     color: #777;
-    font-size: 3.5vh;
+    font-size: 2.5vh;
   }
   nav ul li a {
     margin: 0.3rem 1rem;
@@ -370,6 +381,15 @@ span svg {
   }
   nav span {
     margin: 0 15px;
+  }
+  nav .btn-container-open {
+    top: auto;
+    right: auto;
+    margin: 15px -15px;
+  }
+  nav .fa-globe {
+    margin-top: 20px;
+    margin-left: 0;
   }
   span.language a {
     display: flex;
@@ -403,6 +423,9 @@ span svg {
   h1 {
     font-size: 6vw;
   }
+  .homepage h1 {
+    font-size: 4vw;
+  }
   h2 {
     font-size: 4.5vw;
   }
@@ -411,7 +434,6 @@ span svg {
   }
   .homepage {
     align-content: center;
-    padding: 0;
   }
 }
 @media screen and (max-width: 584px) {
@@ -419,10 +441,10 @@ span svg {
     width: 85% !important;
   }
   .error_page section p {
-    font-size: 20px !important;
+    font-size: 1.5em !important;
   }
   .error_page section h3 {
-    font-size: 17px !important;
+    font-size: 1em !important;
   }
 }
 @media screen and (max-width: 279px) {

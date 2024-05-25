@@ -1,3 +1,27 @@
 {
-  "headline": "O nás"
+  "headline": "O nás",
+  "homepage": "OilTarator s.r.o",
+  "description": {
+    "line1": "Představuje se Vám,obchodní firma s širokým záběrem na trhu z oleji technickými rostlinného původu.",
+    "line2": "V nabídce našich produktů můžete najít rozsáhle spektrum druhů a jakosti od čistých olejů rostlinných:",
+    "line3": "až po oleje se zvýšenou hodnotou mastných kyselin. Umíme připravit mix olejů rostlinných, dle požadovaných parametrů zákazníka. ",
+    "line4": "Oiltarator s.r.o. využívá moderní technické vybavení se skladovou kapacitou až 1 300 tun. Naše firma se nachází v Ostravě, 20 km od hranic z Polska poblíž sjezdu z dálnicemi dobrém dopravním dosahu, což velice zjednodušuje organizaci transportu. Zabýváme se také uskladňováním olejů a jejich překládkou. ",
+    "line5": "Těšíme se na spolupráci. Rádi zodpovíme všechny Vaše dotazy."
+  },
+  "oil1": "sojový",
+  "oil2": "slunečnicový",
+  "oil3": "řepkový",
+  "nav1": "Domů",
+  "nav2": "Kontakt",
+  "nav3": "Galerie",
+  "contact": "Pošlete nám zprávu!",
+  "contacth1": "Kde nás můžete najít?",
+  "footer": "Vytvořil CheeseField",
+  "ceo": "Výkonný ředitel",
+  "message": "Jestli máte zájem o nějáké z našich služeb nebo máte jakýkoliv dotaz, neváhejte se nám ozvat. Rádi zodpovíme všechny Vaše dotazy.",
+  "errorpage": {
+    "line1": "Vypadá to, že ses ztratil v oleji.",
+    "line2": "Stránka, kterou hledáte, mohla být odstraněna, byl změněn její název nebo je dočasně nedostupná.",
+    "button": "Vezmi mě zpět!"
+  }
 }

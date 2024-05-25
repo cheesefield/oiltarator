@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 function Homepage() {
   const { t } = useTranslation();
 
+  const { line1, line2, line3, line4, line5 } = t("description");
+
   return (
     <div className="main">
       <Helmet>
@@ -39,18 +41,18 @@ function Homepage() {
         <img src={hlavni_brana} alt="hlavni brana"></img>
         <div className="homepage">
           <h1>{t("homepage")}</h1>
-          <h3>{t("description1")}</h3>
+          <h3>{line1}</h3>
         </div>
       </div>
-      <p>{t("description2")}</p>
+      <p>{line2}</p>
       <ul>
         <li>{t("oil1")}</li>
         <li>{t("oil2")}</li>
         <li>{t("oil3")}</li>
       </ul>
-      <p>{t("description3")}</p>
-      <p>{t("description4")}</p>
-      <p>{t("description5")}</p>
+      <p>{line3}</p>
+      <p>{line4}</p>
+      <p>{line5}</p>
     </div>
   );
 }

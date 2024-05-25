@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import "../style.css"; // Assuming you have the CSS in this file
+import "../style.css"; // css
 // images
 import images from "../components/ImagesData";
 import { useTranslation } from "react-i18next";
@@ -48,21 +48,19 @@ const Gallery = () => {
           content="https://oiltarator.com/images/share.png"
         />
       </Helmet>
-      <section className="gallery">
-        <h1>{t("nav3")}</h1>
-        <div className="gallery-grid">
-          {images.map((image, index) => (
-            <div key={index} className="gallery-item">
-              <img
-                src={image.thumbnail}
-                alt={image.alt}
-                className="gallery-img"
-                onClick={() => openModal(image.large)}
-              />
-            </div>
-          ))}
-        </div>
-      </section>
+      <h1>{t("nav3")}</h1>
+      <div className="gallery-grid">
+        {images.map((image, index) => (
+          <div key={index} className="gallery-item">
+            <img
+              src={image.thumbnail}
+              alt={image.alt}
+              className="gallery-img"
+              onClick={() => openModal(image.large)}
+            />
+          </div>
+        ))}
+      </div>
 
       {modalOpen && (
         <div id="modal" className="modal" onClick={closeModal}>

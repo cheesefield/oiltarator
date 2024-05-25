@@ -1,3 +1,27 @@
 {
-  "headline": "O nas"
+  "headline": "O nas",
+  "homepage": "OilTarator s.r.o",
+  "description": {
+    "line1": "Jesteśmy firmą handlową szeroko działająco w branży handlu olejami roślinnymi technicznymi.",
+    "line2": "W bazie naszych produktów znajdą Państwo oleje w szerokim spectrum gatunkowym, od czystych olei roślinnych:",
+    "line3": "po oleje o podwyższonej kwasowości, oraz miksy olejów roślinnych przygotowywane specjalnie na zamówienie klienta, pod określone parametry.",
+    "line4": "Oiltarator s.r.o. posiada nowoczesne zaplecze techniczne z pojemnością magazynowanie towaru do 1300 ton. Nasza baza mieści się w Ostravie, ok. 20 km do granicy z Polską, niedaleko zjazdu z autostrady, co znacznie ułatwia organizację transportu. Jako firma świadczymy również usługi magazynowania towaru, oraz przeładunku. ",
+    "line5": "Zapraszamy do współpracy. Chętnie odpowiemy na wszystkie Państwa pytania. "
+  },
+  "oil1": "sojowego",
+  "oil2": "słonecznikowego",
+  "oil3": "rzepakowego",
+  "nav1": "Dom",
+  "nav2": "Kontakt",
+  "nav3": "Galeria",
+  "contact": "Wyślij nam wiadomość!",
+  "contacth1": "Gdzie możesz nas znaleźć?",
+  "footer": "Zaprojektowany przez CheeseField",
+  "ceo": "Dyrektor naczelny",
+  "message": "Jeśli jesteś zainteresowany którąkolwiek z naszych usług lub masz jakiekolwiek pytania, nie wahaj się z nami skontaktować. Chętnie odpowiemy na wszystkie Twoje pytania.",
+  "errorpage": {
+    "line1": "Wygląda na to, że zatraciłeś się w oleju.",
+    "line2": "Strona, której szukasz, mogła zostać usunięta, zmieniła się jej nazwa lub jest chwilowo niedostępna.",
+    "button": "Zabierz mnie z powrotem!"
+  }
 }
