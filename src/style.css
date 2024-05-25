@@ -80,9 +80,6 @@ nav .menu-btn__burger,
 nav .menu-btn {
   display: none;
 }
-.body .progress-container {
-  display: none;
-}
 nav .menu-btn__burger {
   color: #333;
 }
@@ -145,10 +142,8 @@ nav .btn-container-open {
 .brana {
   display: flex;
   position: relative;
-  display: flex;
-  position: relative;
   margin-left: -2.65%;
-  align-content: center;
+  margin-top: -4px;
   width: 100vw;
   flex-direction: column;
   align-items: center;
@@ -160,9 +155,10 @@ nav .btn-container-open {
   width: 100vw;
 }
 .homepage {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   font-size: 1.5vw;
-  height: 85%;
   background-color: rgba(245, 254, 255, 0.6);
   box-shadow: 0 5px 15px rgba(99, 176, 184, 1);
   border: 5px solid rgba(0, 0, 0, 0.6);
@@ -400,6 +396,10 @@ span svg {
     text-decoration: none;
     font-weight: bold;
   }
+  .homepage {
+    font-size: 1.8vw;
+    justify-content: center;
+  }
   .btn-container {
     margin-top: 10vh;
     margin-left: 0;
@@ -425,6 +425,9 @@ span svg {
   }
   .homepage h1 {
     font-size: 4vw;
+  }
+  .homepage h3 {
+    font-size: 2.5vw;
   }
   h2 {
     font-size: 4.5vw;
