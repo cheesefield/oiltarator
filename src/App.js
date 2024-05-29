@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./style.css";
@@ -12,17 +12,9 @@ import Gallery from "./pages/Gallery";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/ErrorPage.js";
-import Loading from "./components/Loading.js";
 
 function App() {
   const [language, setLanguage] = useState(false);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 3300);
-  }, []);
-  if (loading) {
-    return <Loading />;
-  }
   return (
     <div className="App">
       <Router>

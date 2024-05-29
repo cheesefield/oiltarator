@@ -2,17 +2,17 @@
   "name": "OilTarator",
   "icons": [
     {
-      "src": "images/favicon.ico",
+      "src": "favicon/favicon.ico",
       "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "images/favicon-16x16.png",
+      "src": "favicon/favicon-16x16.png",
       "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "images/favicon-32x32.png",
+      "src": "favicon/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
@@ -32,7 +32,9 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "theme_color": "#63b0b8",
+  "background_color": "#63b0b8",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/"
 }
