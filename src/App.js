@@ -12,10 +12,15 @@ import Gallery from "./pages/Gallery";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/ErrorPage.js";
+//  vercel analytics
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
     <div className="App">
+      <SpeedInsights />
+      <Analytics />
       <Router>
         <Nav />
         <Routes>
