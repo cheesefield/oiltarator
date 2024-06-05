@@ -1,4 +1,5 @@
 import React from "react";
+import { Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./style.css";
@@ -13,26 +14,28 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/ErrorPage.js";
 //  vercel analytics
-import { SpeedInsights } from "@vercel/speed-insights/react";
-import { Analytics } from "@vercel/analytics/react";
+// import { SpeedInsights } from "@vercel/speed-insights/react";
+// import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
     <div className="App">
-      <SpeedInsights />
-      <Analytics />
-      <Router>
-        <Nav />
-        <Routes>
-          <Route exact path="/" element={<Homepage />} />
-          {/* <Route exact path="/about" element={<About />} /> */}
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/gallery" element={<Gallery />} />
-          {/* <Route exact path="/products" element={<Products />} /> */}
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-        <Footer />
-      </Router>
+      {/* <SpeedInsights />
+      <Analytics /> */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <Router>
+          <Nav />
+          <Routes>
+            <Route exact="true" path="/" element={<Homepage />} />
+            {/* <Route exact path="/about" element={<About />} /> */}
+            <Route exact="true" path="/contact" element={<Contact />} />
+            <Route exact="true" path="/gallery" element={<Gallery />} />
+            {/* <Route exact="true" path="/products" element={<Products />} /> */}
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </Suspense>
     </div>
   );
 }

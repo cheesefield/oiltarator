@@ -7,6 +7,9 @@ import { useTranslation } from "react-i18next";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 
+// Components
+import GoogleIframe from "../components/GoogleIframe";
+
 function Contact() {
   const { t } = useTranslation();
 
@@ -40,12 +43,7 @@ function Contact() {
       </Helmet>
       <div className="center">
         <h1>{t("contacth1")}</h1>
-        <iframe
-          title="maps"
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Lihovarsk%C3%A1%20642/16,%20718%2000%20Ostrava%20-%20Kun%C4%8Di%C4%8Dky,%20%C4%8Cesko+(OilTarator%20s.r.o)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        >
-          <a href="https://www.gps.ie/">gps trackers</a>
-        </iframe>
+        <GoogleIframe />
       </div>
       <div className="contact-section">
         <div className="contact-info">
@@ -59,7 +57,6 @@ function Contact() {
             <FaPhoneAlt /> +420 724 042 450
           </span>
         </div>
-        <div className="form"></div>
       </div>
     </div>
   );
