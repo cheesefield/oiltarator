@@ -3,9 +3,8 @@ import { Helmet } from "react-helmet";
 import "../i18.js";
 import { useTranslation } from "react-i18next";
 
-// font awesome icons
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
+// Font Awesome icons
+import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 // Components
 import GoogleIframe from "../components/GoogleIframe";
@@ -29,7 +28,6 @@ function Contact() {
           property="og:image"
           content="https://oiltarator.com/images/share.png"
         />
-
         <meta property="twitter:url" content="https://oiltarator.com/contact" />
         <meta property="twitter:title" content="OilTarator • contact" />
         <meta

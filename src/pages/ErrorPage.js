@@ -12,7 +12,7 @@ function ErrorPage() {
   return (
     <div>
       <Helmet>
-        <title>Error 404(Page Not Found)</title>
+        <title>Error 404 - Page Not Found</title>
         <meta name="title" content="OilTarator" />
         <meta
           name="description"
