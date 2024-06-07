@@ -59,11 +59,15 @@
     ],
     "inlineCss": true,
     "headless": true,
-    "source": "public",
     "include": [
       "/",
       "/contact",
       "/gallery"
     ]
+  },
+  "devDependencies": {
+    "mkdirp": "^3.0.1",
+    "puppeteer": "^22.10.0",
+    "rimraf": "^5.0.7"
   }
 }
