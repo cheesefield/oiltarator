@@ -36,9 +36,14 @@ nav ul li {
   position: relative;
   list-style: none;
 }
-nav ul li .active {
+nav ul li .active,
+nav ul li a:hover {
   border: 3px solid;
   border-radius: 30px;
+  transition: border 0.7s ease-in-out;
+}
+nav ul li .active:hover {
+  border: 3px solid var(--white);
 }
 nav ul li a {
   position: relative;
@@ -54,10 +59,6 @@ nav ul li a {
   border: 3px solid transparent;
   border-radius: 30px;
   transition: 0.6s;
-}
-nav ul li a:hover {
-  border: 3px solid;
-  border-radius: 30px;
 }
 nav ul.active {
   opacity: 1;
@@ -167,21 +168,26 @@ nav .btn-container-open {
   height: 60%;
   padding: 25px 25px;
   text-align: center;
+  align-items: center;
 }
 .center {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 iframe {
   height: 400px;
   margin: 0;
   width: 80%;
 }
-h1 {
+h1,
+h2,
+h3 {
   text-align: center;
 }
+
 .homepage h1 {
   margin: 0;
   margin-top: 10px;
@@ -189,35 +195,34 @@ h1 {
 .homepage h3 {
   font-weight: normal;
 }
-span {
-  font-size: 1.1rem;
-}
 ul li {
   list-style: square;
 }
-button {
-  background-color: var(--white);
-  border: none;
-  color: var(--black);
-  border: 2px solid #555;
-  padding: 7px 5px;
-  text-align: center;
-  text-decoration: none;
+.homepage button {
   display: inline-block;
-  font-size: 13px;
-  transition-duration: 0.4s;
+  padding: 10px 20px;
+  color: var(--black);
+  background: linear-gradient(
+    166deg,
+    rgba(6, 87, 96, 1) 0%,
+    rgba(99, 176, 184, 1) 35%,
+    rgba(141, 243, 254, 1) 100%
+  );
+  background-color: #8df3fe;
+  border: 2px solid var(--black);
+  border-radius: 5px;
+  font-size: 1.3rem;
   cursor: pointer;
+  transition: all 0.7s ease;
 }
-button:hover {
-  background-color: #555;
-  color: var(--white);
-}
-button.selected {
-  background-color: #555;
-  color: var(--white);
-}
-button.selected:hover {
-  background-color: rgba(99, 176, 184, 0.6);
+.homepage button:hover {
+  background-color: var(--blue);
+  background: linear-gradient(
+    166deg,
+    rgba(6, 87, 96, 1) 0%,
+    rgba(99, 176, 184, 1) 67%,
+    rgba(141, 243, 254, 1) 100%
+  );
   color: var(--white);
 }
 
@@ -228,20 +233,22 @@ button.selected:hover {
 
 .gallery-grid {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .gallery-item {
-  flex: 1 1 calc(33.333% - 30px);
+  flex: 1 1 calc(33.33333% - 30px);
   box-sizing: border-box;
   max-width: 300px;
 }
 
 .gallery-item img {
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
   cursor: pointer;
   transition: transform 0.2s;
 }
@@ -305,14 +312,34 @@ button.selected:hover {
   margin: 2rem 1rem;
   text-align: center;
 }
-.contact-info {
+.contact-container {
   display: flex;
-  flex-direction: column;
-  margin-left: 100px;
-  margin-top: 40px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.contact-info {
+  align-self: center;
+  margin: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+.contact-info p {
+  font-size: 1.1rem;
 }
 .contact-info span {
+  display: block;
+  margin-bottom: 10px;
   margin: 5px 0;
+}
+
+.contact-info span {
+  display: block;
+  margin-bottom: 10px;
+  margin: 5px 0;
+}
+.info {
+  display: ruby;
 }
 span svg {
   margin-right: 10px;
@@ -399,17 +426,32 @@ span svg {
     font-weight: bold;
   }
   .homepage {
+    position: relative;
+    width: 80vw;
     font-size: 1.8vw;
+    margin: 20px;
     justify-content: center;
+  }
+  .homepage h1 {
+    margin-top: 0;
+  }
+  .homepage button {
+    font-size: 0.9rem;
   }
   .btn-container {
     margin-top: 10vh;
     margin-left: 0;
   }
+  .contact-form-container {
+    width: 80vw;
+  }
+  .contact-container {
+    align-items: center;
+    flex-direction: column;
+  }
   .contact-info {
     align-items: center;
     text-align: center;
-    margin-left: 0;
   }
 }
 
@@ -420,22 +462,16 @@ span svg {
   .gallery-item {
     flex-basis: calc(50% - 30px);
   }
+  .homepage button {
+    font-size: 0.7rem;
+  }
 }
 @media screen and (max-width: 584px) {
-  h1 {
+  .homepage h1 {
     font-size: 6vw;
   }
-  .homepage h1 {
-    font-size: 4vw;
-  }
   .homepage h3 {
-    font-size: 2.5vw;
-  }
-  h2 {
-    font-size: 4.5vw;
-  }
-  h3 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .homepage {
     align-content: center;

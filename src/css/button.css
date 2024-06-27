@@ -1,0 +1,25 @@
+button {
+  background-color: var(--white);
+  border: none;
+  color: var(--black);
+  border: 2px solid #555;
+  padding: 7px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #555;
+  color: var(--white);
+}
+button.selected {
+  background-color: #555;
+  color: var(--white);
+}
+button.selected:hover {
+  background-color: rgba(99, 176, 184, 0.6);
+  color: var(--white);
+}

@@ -1,6 +1,6 @@
 {
   "headline": "About us",
-  "homepage": "OilTarator s.r.o",
+  "homepage": "OilTarator s.r.o.",
   "description": {
     "line1": "We are a trading company operating extensively in the technical vegetable oil trade industry.",
     "line2": "Our product database includes oils in a wide range of species, from pure vegetable oils:",
@@ -14,8 +14,16 @@
   "nav1": "Home",
   "nav2": "Contact",
   "nav3": "Gallery",
-  "contact": "Send us a message!",
   "contacth1": "Where can you find us?",
+  "contact1": "Contact us",
+  "contact2": "Send us a message!",
+  "contact-form": {
+    "line1": "Name",
+    "line2": "Email",
+    "line3": "Message",
+    "line4": "Form was submitted successfully!",
+    "button": "Send"
+  },
   "footer": "Designed by CheeseField",
   "ceo": "Chief Executive Officer",
   "message": "If you are interested in any of our services or have any questions, do not hesitate to contact us. We will be happy to answer all your questions.",

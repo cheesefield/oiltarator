@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 import hlavni_brana from "../images/hlavni_brana.jpeg";
 import "../i18.js";
 import { useTranslation } from "react-i18next";
@@ -42,6 +43,9 @@ function Homepage() {
         <div className="homepage">
           <h1>{t("homepage")}</h1>
           <h3>{line1}</h3>
+          <Link to="/contact">
+            <button>{t("contact1")}</button>
+          </Link>
         </div>
       </div>
       <p>{line2}</p>

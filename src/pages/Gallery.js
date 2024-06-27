@@ -57,6 +57,7 @@ const Gallery = () => {
               alt={image.alt}
               className="gallery-img"
               onClick={() => openModal(image.large)}
+              loading="lazy"
             />
           </div>
         ))}

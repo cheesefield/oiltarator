@@ -1,6 +1,6 @@
 {
   "headline": "O nas",
-  "homepage": "OilTarator s.r.o",
+  "homepage": "OilTarator s.r.o.",
   "description": {
     "line1": "Jesteśmy firmą handlową szeroko działająco w branży handlu olejami roślinnymi technicznymi.",
     "line2": "W bazie naszych produktów znajdą Państwo oleje w szerokim spectrum gatunkowym, od czystych olei roślinnych:",
@@ -14,8 +14,16 @@
   "nav1": "Dom",
   "nav2": "Kontakt",
   "nav3": "Galeria",
-  "contact": "Wyślij nam wiadomość!",
   "contacth1": "Gdzie możesz nas znaleźć?",
+  "contact1": "Skontaktuj się z nami",
+  "contact2": "Wyślij nam wiadomość!",
+  "contact-form": {
+    "line1": "Imię",
+    "line2": "Adres e-mail",
+    "line3": "Wiadomość",
+    "line4": "Formularz został pomyślnie wysłany!",
+    "button": "Wysłać"
+  },
   "footer": "Zaprojektowany przez CheeseField",
   "ceo": "Dyrektor naczelny",
   "message": "Jeśli jesteś zainteresowany którąkolwiek z naszych usług lub masz jakiekolwiek pytania, nie wahaj się z nami skontaktować. Chętnie odpowiemy na wszystkie Twoje pytania.",

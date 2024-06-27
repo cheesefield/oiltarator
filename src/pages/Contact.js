@@ -8,6 +8,7 @@ import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 // Components
 import GoogleIframe from "../components/GoogleIframe";
+// import ContactForm from "../components/ContactForm.js";
 
 function Contact() {
   const { t } = useTranslation();
@@ -43,9 +44,9 @@ function Contact() {
         <h1>{t("contacth1")}</h1>
         <GoogleIframe />
       </div>
-      <div className="contact-section">
+      <div className="contact-container">
         <div className="contact-info">
-          <h2 className="contact">{t("contact")}</h2>
+          <h3 className="contact">{t("contact1")}</h3>
           <p>{t("message")}</p>
           <span>{t("ceo")}: Rostislav Sikora</span>
           <span>
@@ -55,6 +56,7 @@ function Contact() {
             <FaPhoneAlt /> +420 724 042 450
           </span>
         </div>
+        {/* <ContactForm />  */}
       </div>
     </div>
   );

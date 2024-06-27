@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaGlobe } from "react-icons/fa";
+import "../css/button.css"; // css
 
 const languages = [
   { code: "en", lang: "English" },

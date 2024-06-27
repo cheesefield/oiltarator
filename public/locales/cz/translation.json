@@ -1,6 +1,6 @@
 {
   "headline": "O nás",
-  "homepage": "OilTarator s.r.o",
+  "homepage": "OilTarator s.r.o.",
   "description": {
     "line1": "Představuje se Vám,obchodní firma s širokým záběrem na trhu z oleji technickými rostlinného původu.",
     "line2": "V nabídce našich produktů můžete najít rozsáhle spektrum druhů a jakosti od čistých olejů rostlinných:",
@@ -14,8 +14,16 @@
   "nav1": "Domů",
   "nav2": "Kontakt",
   "nav3": "Galerie",
-  "contact": "Pošlete nám zprávu!",
   "contacth1": "Kde nás můžete najít?",
+  "contact1": "Kontaktujte nás",
+  "contact2": "Pošlete nám zprávu!",
+  "contact-form": {
+    "line1": "Jméno",
+    "line2": "Emailová adresa",
+    "line3": "Zpráva",
+    "line4": "Formulář byl úspěšně odeslán!",
+    "button": "Odeslat"
+  },
   "footer": "Vytvořil CheeseField",
   "ceo": "Výkonný ředitel",
   "message": "Jestli máte zájem o nějáké z našich služeb nebo máte jakýkoliv dotaz, neváhejte se nám ozvat. Rádi zodpovíme všechny Vaše dotazy.",
