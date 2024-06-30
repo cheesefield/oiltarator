@@ -1,7 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+// images
 import hlavni_brana from "../images/hlavni_brana.jpeg";
+import sunflower from "../images/sunflower_oil_desk.jpeg";
+import soybean from "../images/soybean_oil_desk.jpeg";
+import rapeseed from "../images/rapeseed_oil_desk.jpeg";
+
 import "../i18.js";
 import { useTranslation } from "react-i18next";
 
@@ -48,13 +53,22 @@ function Homepage() {
           </Link>
         </div>
       </div>
-      <p>{line2}</p>
-      <ul>
-        <li>{t("oil1")}</li>
-        <li>{t("oil2")}</li>
-        <li>{t("oil3")}</li>
-      </ul>
-      <p>{line3}</p>
+      <h2>{line2}</h2>
+      <section className="oils">
+        <div className="oil">
+          <img src={soybean} alt="hlavni brana"></img>
+          <h3>{t("oil1")}</h3>
+        </div>
+        <div className="oil">
+          <img src={sunflower} alt="hlavni brana"></img>
+          <h3>{t("oil2")}</h3>
+        </div>
+        <div className="oil">
+          <img src={rapeseed} alt="hlavni brana"></img>
+          <h3>{t("oil3")}</h3>
+        </div>
+        <h3 className="description">{line3}</h3>
+      </section>
       <p>{line4}</p>
       <p>{line5}</p>
     </div>

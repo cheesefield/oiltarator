@@ -192,11 +192,39 @@ h3 {
   margin: 0;
   margin-top: 10px;
 }
+
 .homepage h3 {
   font-weight: normal;
 }
-ul li {
-  list-style: square;
+
+section.oils {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+section .oil {
+  margin: 20px;
+  max-width: fit-content;
+}
+section .oil img {
+  height: 350px;
+  display: block;
+}
+
+section .oil h3 {
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  background-color: rgba(99, 176, 184, 1);
+  color: var(--white);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 1rem;
+}
+section h3.description {
+  margin: 0;
+  margin-top: 35px;
 }
 .homepage button {
   display: inline-block;
@@ -350,10 +378,21 @@ span svg {
   text-align: center;
   background-color: black;
   color: white;
+  font-weight: 600;
   position: absolute;
   right: 0;
   left: 0;
   bottom: 0;
+}
+@media screen and (max-width: 1231px) {
+  section .oil img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 1073px) {
+  section .oil img {
+    height: 250px;
+  }
 }
 @media screen and (max-width: 992px) {
   nav .menu-btn__burger {
