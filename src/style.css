@@ -200,30 +200,32 @@ ul li {
 }
 .homepage button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 25px;
   color: var(--black);
+  font-size: 1rem;
+  font-weight: 800;
   background: linear-gradient(
-    166deg,
+    96deg,
     rgba(6, 87, 96, 1) 0%,
     rgba(99, 176, 184, 1) 35%,
     rgba(141, 243, 254, 1) 100%
   );
-  background-color: #8df3fe;
-  border: 2px solid var(--black);
-  border-radius: 5px;
-  font-size: 1.3rem;
+  background-color: rgba(6, 87, 96, 1);
+  border: 5px solid rgba(141, 243, 254, 1);
+  border-radius: 15px;
   cursor: pointer;
-  transition: all 0.7s ease;
+  transition: all 0.7s ease-in-out;
 }
 .homepage button:hover {
   background-color: var(--blue);
   background: linear-gradient(
     166deg,
     rgba(6, 87, 96, 1) 0%,
-    rgba(99, 176, 184, 1) 67%,
+    rgba(99, 176, 184, 1) 47%,
     rgba(141, 243, 254, 1) 100%
   );
   color: var(--white);
+  border: 5px solid rgba(99, 176, 184, 1);
 }
 
 .gallery h1 {

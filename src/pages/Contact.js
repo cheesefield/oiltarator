@@ -49,6 +49,7 @@ function Contact() {
           <h3 className="contact">{t("contact1")}</h3>
           <p>{t("message")}</p>
           <span>{t("ceo")}: Rostislav Sikora</span>
+          <span>{t("residence")}</span>
           <span>
             <FaEnvelope /> oiltarator@email.cz
           </span>
