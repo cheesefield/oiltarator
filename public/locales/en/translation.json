@@ -16,18 +16,20 @@
   "nav3": "Gallery",
   "contacth1": "Where can you find us?",
   "contact1": "Contact us",
+  "ceo": "Chief Executive Officer",
+  "residence": "Headquarters: Příčná 1892/4, Nové Město, 110 00 Prague 1",
+  "message": "If you are interested in any of our services or have any questions, do not hesitate to contact us. We will be happy to answer all your questions.",
+  "route": "Show me the route",
   "contact2": "Send us a message!",
   "contact-form": {
     "line1": "Name",
     "line2": "Email",
-    "line3": "Message",
+    "line3": "Text",
     "line4": "Form was submitted successfully!",
-    "button": "Send"
+    "button": "Send",
+    "messagevalue": "Write us a message!"
   },
   "footer": "Designed by CheeseField",
-  "ceo": "Chief Executive Officer",
-  "residence": "Headquarters: Příčná 1892/4, Nové Město, 110 00 Prague 1",
-  "message": "If you are interested in any of our services or have any questions, do not hesitate to contact us. We will be happy to answer all your questions.",
   "errorpage": {
     "line1": "Looks like you got lost in the oil.",
     "line2": "The page you are looking for might have been removed, had it´s name changed or is temporarily unavailable.",

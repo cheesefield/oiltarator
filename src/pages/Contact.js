@@ -5,10 +5,11 @@ import { useTranslation } from "react-i18next";
 
 // Font Awesome icons
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 // Components
-import GoogleIframe from "../components/GoogleIframe";
-// import ContactForm from "../components/ContactForm.js";
+import ContactForm from "../components/ContactForm.js";
+import LeafletMap from "../components/LeafletMap.js";
 
 function Contact() {
   const { t } = useTranslation();
@@ -42,7 +43,7 @@ function Contact() {
       </Helmet>
       <div className="center">
         <h1>{t("contacth1")}</h1>
-        <GoogleIframe />
+        <LeafletMap />
       </div>
       <div className="contact-container">
         <div className="contact-info">
@@ -51,13 +52,25 @@ function Contact() {
           <span>{t("ceo")}: Rostislav Sikora</span>
           <span>{t("residence")}</span>
           <span>
-            <FaEnvelope /> oiltarator@email.cz
+            <FaEnvelope />
+            <a href="mailto:oiltarator@email.cz">oiltarator@email.cz</a>
           </span>
           <span>
-            <FaPhoneAlt /> +420 724 042 450
+            <FaPhoneAlt />
+            <a href="tel:+420724042450">+420 724 042 450</a>
+          </span>
+          <span>
+            <FaMapMarkerAlt />
+            <a
+              href="https://maps.google.com/maps?ll=49.813143,18.297498&amp;z=13&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=embed&amp;q=Lihovarsk%C3%A1%20642%2F16%20718%2000%20Slezsk%C3%A1%20Ostrava-Kun%C4%8Di%C4%8Dky%20Czechia"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Lihovarská 642/16, 718 00 Slezská Ostrava-Kunčičky, Czechia
+            </a>
           </span>
         </div>
-        {/* <ContactForm />  */}
+        <ContactForm />
       </div>
     </div>
   );

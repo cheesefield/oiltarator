@@ -19,7 +19,7 @@ nav {
   color: var(--black);
   user-select: none;
   font-family: Optima, sans-serif;
-  z-index: 20;
+  z-index: 100000000000000000000;
 }
 nav img {
   position: relative;
@@ -177,7 +177,7 @@ nav .btn-container-open {
   align-items: center;
   margin-bottom: 20px;
 }
-iframe {
+.leaflet-container {
   height: 400px;
   margin: 0;
   width: 80%;
@@ -197,19 +197,29 @@ h3 {
   font-weight: normal;
 }
 
-section.oils {
+section.oil_section {
+  margin: 40px 0;
+}
+
+section .oils {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 40px 0;
 }
 section .oil {
   margin: 20px;
   max-width: fit-content;
 }
+
 section .oil img {
   height: 350px;
   display: block;
+  transition: all 0.5s ease-out allow-discrete;
+}
+
+section .oil img:hover {
+  opacity: 0.6;
+  height: 365px;
 }
 
 section .oil h3 {
@@ -255,7 +265,31 @@ section h3.description {
   color: var(--white);
   border: 5px solid rgba(99, 176, 184, 1);
 }
-
+.company_description {
+  background-color: var(--darkblue);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 20px;
+  margin-bottom: 0;
+  border-radius: 10px;
+  box-shadow: 10px 5px 5px var(--blue);
+}
+.greeting_flex {
+  display: flex;
+  justify-content: center;
+}
+.greeting {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--black);
+  background-color: var(--white);
+  font-weight: 500;
+  margin-top: -10px;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+  width: fit-content;
+}
 .gallery h1 {
   font-size: 2em;
   margin-bottom: 20px;
@@ -363,11 +397,15 @@ section h3.description {
   margin: 5px 0;
 }
 
-.contact-info span {
-  display: block;
-  margin-bottom: 10px;
-  margin: 5px 0;
+.contact-info span a {
+  color: var(--black);
+  transition: all 0.8s ease-in-out;
 }
+
+.contact-info span a:hover {
+  color: #777;
+}
+
 .info {
   display: ruby;
 }
@@ -388,10 +426,16 @@ span svg {
   section .oil img {
     height: 300px;
   }
+  section .oil img:hover {
+    height: 315px;
+  }
 }
 @media screen and (max-width: 1073px) {
   section .oil img {
     height: 250px;
+  }
+  section .oil img:hover {
+    height: 265px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -415,7 +459,6 @@ span svg {
   nav {
     flex-direction: column;
     align-items: flex-start;
-    z-index: 100;
   }
   nav img {
     display: flex;

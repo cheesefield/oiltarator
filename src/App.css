@@ -2,6 +2,7 @@
   --black: #252525;
   --white: #efefed;
   --blue: #63b0b8;
+  --darkblue: rgba(0, 123, 136, 0.7);
 }
 * {
   box-sizing: border-box;
@@ -9,7 +10,7 @@
 
 body {
   margin: 0;
-  background-color: rgba(99, 176, 184, 0.3);
+  background-color: rgba(99, 176, 184, 0.5);
   background-image: url("./images/large-triangles.svg");
 }
 h1 {

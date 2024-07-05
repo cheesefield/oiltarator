@@ -16,18 +16,20 @@
   "nav3": "Galeria",
   "contacth1": "Gdzie możesz nas znaleźć?",
   "contact1": "Skontaktuj się z nami",
+  "ceo": "Dyrektor naczelny",
+  "residence": "Siedziba: Příčná 1892/4, Nové Město, 110 00 Praga 1",
+  "message": "Jeśli jesteś zainteresowany którąkolwiek z naszych usług lub masz jakiekolwiek pytania, nie wahaj się z nami skontaktować. Chętnie odpowiemy na wszystkie Twoje pytania.",
+  "route": "Pokaż mi trasę",
   "contact2": "Wyślij nam wiadomość!",
   "contact-form": {
     "line1": "Imię",
     "line2": "Adres e-mail",
-    "line3": "Wiadomość",
+    "line3": "Text",
     "line4": "Formularz został pomyślnie wysłany!",
-    "button": "Wysłać"
+    "button": "Wysłać",
+    "messagevalue": "Napisz do nas wiadomość!"
   },
   "footer": "Zaprojektowany przez CheeseField",
-  "ceo": "Dyrektor naczelny",
-  "residence": "Siedziba: Příčná 1892/4, Nové Město, 110 00 Praga 1",
-  "message": "Jeśli jesteś zainteresowany którąkolwiek z naszych usług lub masz jakiekolwiek pytania, nie wahaj się z nami skontaktować. Chętnie odpowiemy na wszystkie Twoje pytania.",
   "errorpage": {
     "line1": "Wygląda na to, że zatraciłeś się w oleju.",
     "line2": "Strona, której szukasz, mogła zostać usunięta, zmieniła się jej nazwa lub jest chwilowo niedostępna.",

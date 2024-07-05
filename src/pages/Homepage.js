@@ -43,7 +43,7 @@ function Homepage() {
           content="https://oiltarator.com/images/share.png"
         />
       </Helmet>
-      <div className="brana">
+      <section className="brana">
         <img src={hlavni_brana} alt="hlavni brana"></img>
         <div className="homepage">
           <h1>{t("homepage")}</h1>
@@ -52,25 +52,29 @@ function Homepage() {
             <button>{t("contact1")}</button>
           </Link>
         </div>
-      </div>
-      <h2>{line2}</h2>
-      <section className="oils">
-        <div className="oil">
-          <img src={soybean} alt="hlavni brana"></img>
-          <h3>{t("oil1")}</h3>
-        </div>
-        <div className="oil">
-          <img src={sunflower} alt="hlavni brana"></img>
-          <h3>{t("oil2")}</h3>
-        </div>
-        <div className="oil">
-          <img src={rapeseed} alt="hlavni brana"></img>
-          <h3>{t("oil3")}</h3>
+      </section>
+      <section className="oil_section">
+        <h2>{line2}</h2>
+        <div className="oils">
+          <div className="oil">
+            <img src={soybean} loading="lazy" alt="hlavni brana"></img>
+            <h3>{t("oil1")}</h3>
+          </div>
+          <div className="oil">
+            <img src={sunflower} loading="lazy" alt="hlavni brana"></img>
+            <h3>{t("oil2")}</h3>
+          </div>
+          <div className="oil">
+            <img src={rapeseed} loading="lazy" alt="hlavni brana"></img>
+            <h3>{t("oil3")}</h3>
+          </div>
         </div>
         <h3 className="description">{line3}</h3>
       </section>
-      <p>{line4}</p>
-      <p>{line5}</p>
+      <p className="company_description">{line4}</p>
+      <div className="greeting_flex">
+        <p className="greeting">{line5}</p>
+      </div>
     </div>
   );
 }
