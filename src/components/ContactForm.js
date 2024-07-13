@@ -29,10 +29,12 @@ function ContactForm() {
         <div className="form-group">
           <label htmlFor="name">{line1}</label>
           <input id="name" type="name" name="name" required />
+          <span class="line"></span>
         </div>
         <div className="form-group">
           <label htmlFor="email">{line2}</label>
           <input id="email" type="email" name="email" required />
+          <span class="line"></span>
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
         <div className="form-group">
@@ -43,6 +45,7 @@ function ContactForm() {
             placeholder={messagevalue}
             required
           />
+          <span class="line"></span>
           <ValidationError
             prefix="Message"
             field="message"
