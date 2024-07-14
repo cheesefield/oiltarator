@@ -20,6 +20,8 @@ import { Analytics } from "@vercel/analytics/react";
 function App() {
   return (
     <div className="App">
+      <SpeedInsights />
+      <Analytics />
       <Suspense fallback={<div>Loading...</div>}>
         <Router>
           <Nav />
@@ -34,8 +36,6 @@ function App() {
           <Footer />
         </Router>
       </Suspense>
-      <SpeedInsights />
-      <Analytics />
     </div>
   );
 }
