@@ -32,10 +32,10 @@ function App() {
             <Route path="*" element={<ErrorPage />} />
           </Routes>
           <Footer />
+          <SpeedInsights />
+          <Analytics />
         </Router>
       </Suspense>
-      <SpeedInsights />
-      <Analytics />
     </div>
   );
 }
