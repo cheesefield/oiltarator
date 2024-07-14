@@ -26,10 +26,10 @@ function App() {
         <Router>
           <Nav />
           <Routes>
-            <Route exact path="/" element={<Homepage />} />
+            <Route path="/" element={<Homepage />} />
             {/* <Route exact path="/about" element={<About />} /> */}
-            <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/gallery" element={<Gallery />} />
             {/* <Route exact path="/products" element={<Products />} /> */}
             <Route path="*" element={<ErrorPage />} />
           </Routes>

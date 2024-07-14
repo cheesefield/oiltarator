@@ -25,13 +25,12 @@ function Nav() {
         </NavLink>
         <ul className={click ? "navbar active" : "navbar"}>
           <li className="nav">
-            <NavLink exact to="/" onClick={closeMobileMenu}>
+            <NavLink to="/" onClick={closeMobileMenu}>
               {t("nav1")}
             </NavLink>
           </li>
           {/* <li className="nav">
             <NavLink
-              exact
               to="/about"
               activeClassName="nav-active"
               onClick={closeMobileMenu}
@@ -41,7 +40,6 @@ function Nav() {
           </li>
           <li className="nav">
             <NavLink
-              exact
               to="/products"
               activeClassName="nav-active"
               onClick={closeMobileMenu}
@@ -50,12 +48,12 @@ function Nav() {
             </NavLink>
           </li> */}
           <li className="nav">
-            <NavLink exact to="/contact" onClick={closeMobileMenu}>
+            <NavLink to="/contact" onClick={closeMobileMenu}>
               {t("nav2")}
             </NavLink>
           </li>
           <li className="nav">
-            <NavLink exact to="/gallery" onClick={closeMobileMenu}>
+            <NavLink to="/gallery" onClick={closeMobileMenu}>
               {t("nav3")}
             </NavLink>
           </li>

@@ -6,10 +6,12 @@ import { useTranslation } from "react-i18next";
 
 function ContactForm() {
   const { t } = useTranslation();
-  const { line1, line2, line3, line4, button, messagevalue } =
-    t("contact-form");
+  const { line1, line2, line3, line4, button, messagevalue } = t(
+    "contact-form",
+    { returnObjects: true }
+  );
 
-  const [state, submit, reset] = useForm("manwypda");
+  const [state, handleSubmit] = useForm("manwypda");
 
   if (state.submitting) {
     return <p>Submitting…</p>;
@@ -19,22 +21,33 @@ function ContactForm() {
     return (
       <div>
         <p>{line4}</p>
-        <button onClick={reset}>Reset</button>
+        <button onClick={() => window.location.reload()}>Reset</button>
       </div>
     );
   }
+
   return (
     <div className="contact-form-container">
-      <form onSubmit={submit} className="contact-form">
+      <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
           <label htmlFor="name">{line1}</label>
-          <input id="name" type="name" name="name" required />
-          <span class="line"></span>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            autoComplete="name"
+            required
+          />
         </div>
         <div className="form-group">
           <label htmlFor="email">{line2}</label>
-          <input id="email" type="email" name="email" required />
-          <span class="line"></span>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            autoComplete="email"
+            required
+          />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
         <div className="form-group">
@@ -45,7 +58,6 @@ function ContactForm() {
             placeholder={messagevalue}
             required
           />
-          <span class="line"></span>
           <ValidationError
             prefix="Message"
             field="message"
