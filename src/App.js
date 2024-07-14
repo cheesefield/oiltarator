@@ -14,8 +14,8 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/ErrorPage.js";
 //  vercel analytics
-// import { SpeedInsights } from "@vercel/speed-insights/react";
-// import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -24,18 +24,18 @@ function App() {
         <Router>
           <Nav />
           <Routes>
-            <Route exact="true" path="/" element={<Homepage />} />
+            <Route exact path="/" element={<Homepage />} />
             {/* <Route exact path="/about" element={<About />} /> */}
-            <Route exact="true" path="/contact" element={<Contact />} />
-            <Route exact="true" path="/gallery" element={<Gallery />} />
-            {/* <Route exact="true" path="/products" element={<Products />} /> */}
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/gallery" element={<Gallery />} />
+            {/* <Route exact path="/products" element={<Products />} /> */}
             <Route path="*" element={<ErrorPage />} />
           </Routes>
           <Footer />
-          {/* <SpeedInsights />
-          <Analytics /> */}
         </Router>
       </Suspense>
+      <SpeedInsights />
+      <Analytics />
     </div>
   );
 }
