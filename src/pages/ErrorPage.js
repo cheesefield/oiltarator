@@ -29,14 +29,14 @@ function ErrorPage() {
           content="https://www.oiltarator.com/images/share.png"
         />
 
-        <meta property="twitter:url" content="https://www.oiltarator.com/*" />
-        <meta property="twitter:title" content="Error 404(Page Not Found)" />
+        <meta name="twitter:url" content="https://www.oiltarator.com/*" />
+        <meta name="twitter:title" content="Error 404(Page Not Found)" />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="Looks like you got lost. Let´s find a way out"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://www.oiltarator.com/images/share.png"
         />
       </Helmet>

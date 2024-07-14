@@ -20,26 +20,29 @@ function Homepage() {
       <Helmet>
         <title>OilTarator</title>
         <meta name="title" content="OilTarator" />
-        <meta name="description" content="This is OilTarator homepage." />
+        <meta
+          name="description"
+          content="We are a trading company operating extensively in the technical vegetable oil trade industry."
+        />
         <meta property="og:url" content="https://oiltarator.com/" />
         <meta property="og:title" content="OilTarator" />
         <meta
           property="og:description"
-          content="This is OilTarator homepage."
+          content="We are a trading company operating extensively in the technical vegetable oil trade industry."
         />
         <meta
           property="og:image"
           content="https://oiltarator.com/images/share.png"
         />
 
-        <meta property="twitter:url" content="https://oiltarator.com/" />
-        <meta property="twitter:title" content="OilTarator" />
+        <meta name="twitter:url" content="https://oiltarator.com/" />
+        <meta name="twitter:title" content="OilTarator" />
         <meta
-          property="twitter:description"
-          content="This is OilTarator homepage."
+          name="twitter:description"
+          content="We are a trading company operating extensively in the technical vegetable oil trade industry."
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://oiltarator.com/images/share.png"
         />
       </Helmet>

@@ -25,26 +25,28 @@ const Gallery = () => {
       <Helmet>
         <title>OilTarator • Gallery</title>
         <meta name="title" content="OilTarator • Gallery" />
-        <meta name="description" content="This is OilTarator gallery page." />
+        <meta
+          name="description"
+          content="Explore our gallery to see the heart of our oil company in action. From drilling and extraction to refining and distribution, witness the processes and people that drive our commitment to energy excellence and sustainability."
+        />
         <meta property="og:url" content="https://oiltarator.com/gallery" />
         <meta property="og:title" content="OilTarator • Gallery" />
         <meta
           property="og:description"
-          content="This is OilTarator gallery page."
+          content="Explore our gallery to see the heart of our oil company in action. From drilling and extraction to refining and distribution, witness the processes and people that drive our commitment to energy excellence and sustainability."
         />
         <meta
           property="og:image"
           content="https://oiltarator.com/images/share.png"
         />
-
-        <meta property="twitter:url" content="https://oiltarator.com/contact" />
-        <meta property="twitter:title" content="OilTarator • contact" />
+        <meta name="twitter:url" content="https://oiltarator.com/contact" />
+        <meta name="twitter:title" content="OilTarator • contact" />
         <meta
-          property="twitter:description"
-          content="This is OilTarator gallery page."
+          name="twitter:description"
+          content="Explore our gallery to see the heart of our oil company in action. From drilling and extraction to refining and distribution, witness the processes and people that drive our commitment to energy excellence and sustainability."
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://oiltarator.com/images/share.png"
         />
       </Helmet>

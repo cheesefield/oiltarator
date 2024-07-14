@@ -19,25 +19,28 @@ function Contact() {
       <Helmet>
         <title>OilTarator • Contact</title>
         <meta name="title" content="OilTarator • Contact" />
-        <meta name="description" content="This is OilTarator contact page." />
+        <meta
+          name="description"
+          content="If you are interested in any of our services or have any questions, do not hesitate to contact us. We will be happy to answer all your questions."
+        />
         <meta property="og:url" content="https://oiltarator.com/contact" />
         <meta property="og:title" content="OilTarator • Contact" />
         <meta
           property="og:description"
-          content="This is OilTarator contact page."
+          content="If you are interested in any of our services or have any questions, do not hesitate to contact us. We will be happy to answer all your questions."
         />
         <meta
           property="og:image"
           content="https://oiltarator.com/images/share.png"
         />
-        <meta property="twitter:url" content="https://oiltarator.com/contact" />
-        <meta property="twitter:title" content="OilTarator • contact" />
+        <meta name="twitter:url" content="https://oiltarator.com/contact" />
+        <meta name="twitter:title" content="OilTarator • Contact" />
         <meta
-          property="twitter:description"
-          content="This is OilTarator contact page."
+          name="twitter:description"
+          content="If you are interested in any of our services or have any questions, do not hesitate to contact us. We will be happy to answer all your questions."
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://oiltarator.com/images/share.png"
         />
       </Helmet>
