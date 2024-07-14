@@ -14,14 +14,14 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import ErrorPage from "./pages/ErrorPage.js";
 //  vercel analytics
-import { SpeedInsights } from "@vercel/speed-insights/react";
-import { Analytics } from "@vercel/analytics/react";
+// import { SpeedInsights } from "@vercel/speed-insights/react";
+// import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
     <div className="App">
-      <SpeedInsights />
-      <Analytics />
+      {/* <SpeedInsights />
+      <Analytics /> */}
       <Suspense fallback={<div>Loading...</div>}>
         <Router>
           <Nav />

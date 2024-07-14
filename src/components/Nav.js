@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../images/logo.png";
 import LanguageSelector from "../components/LanguageSelector.js";
@@ -8,16 +8,7 @@ import { useTranslation } from "react-i18next";
 function Nav() {
   const { t } = useTranslation();
 
-  const [navbar, setNavbar] = useState(false);
   const [click, setClick] = useState(false);
-
-  const changeBackground = () => {
-    if (window.scrollY > 0) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
 
   const handleClick = () => setClick(!click);
 
@@ -26,26 +17,15 @@ function Nav() {
     window.scrollTo(0, 0);
   };
 
-  if (click) {
-    document.body.classList.add("body");
-  } else {
-    document.body.classList.remove("body");
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
-    return () => window.removeEventListener("scroll", changeBackground);
-  }, []);
-
   return (
     <div>
-      <nav className={navbar ? "sticky" : ""}>
+      <nav className="navbar">
         <NavLink to="/" onClick={closeMobileMenu}>
           <img src={logo} alt="logo" />
         </NavLink>
         <ul className={click ? "navbar active" : "navbar"}>
           <li className="nav">
-            <NavLink exact={true} to="/" onClick={closeMobileMenu}>
+            <NavLink exact to="/" onClick={closeMobileMenu}>
               {t("nav1")}
             </NavLink>
           </li>
@@ -70,12 +50,12 @@ function Nav() {
             </NavLink>
           </li> */}
           <li className="nav">
-            <NavLink exact={true} to="/contact" onClick={closeMobileMenu}>
+            <NavLink exact to="/contact" onClick={closeMobileMenu}>
               {t("nav2")}
             </NavLink>
           </li>
           <li className="nav">
-            <NavLink exact={true} to="/gallery" onClick={closeMobileMenu}>
+            <NavLink exact to="/gallery" onClick={closeMobileMenu}>
               {t("nav3")}
             </NavLink>
           </li>
