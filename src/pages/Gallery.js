@@ -57,6 +57,7 @@ const Gallery = () => {
             <img
               src={image.thumbnail}
               alt={image.alt}
+              height="350"
               className="gallery-img"
               onClick={() => openModal(image.large)}
               loading="lazy"

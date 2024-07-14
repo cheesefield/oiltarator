@@ -60,15 +60,30 @@ function Homepage() {
         <h2>{line2}</h2>
         <div className="oils">
           <div className="oil">
-            <img src={soybean} loading="lazy" alt="hlavni brana"></img>
+            <img
+              src={soybean}
+              height="350"
+              loading="lazy"
+              alt="hlavni brana"
+            ></img>
             <h3>{t("oil1")}</h3>
           </div>
           <div className="oil">
-            <img src={sunflower} loading="lazy" alt="hlavni brana"></img>
+            <img
+              src={sunflower}
+              height="350"
+              loading="lazy"
+              alt="hlavni brana"
+            ></img>
             <h3>{t("oil2")}</h3>
           </div>
           <div className="oil">
-            <img src={rapeseed} loading="lazy" alt="hlavni brana"></img>
+            <img
+              src={rapeseed}
+              height="350"
+              loading="lazy"
+              alt="hlavni brana"
+            ></img>
             <h3>{t("oil3")}</h3>
           </div>
         </div>
