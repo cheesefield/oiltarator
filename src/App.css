@@ -117,6 +117,7 @@
 body {
   margin: 0;
   background-color: rgba(99, 176, 184, 0.5);
+  color: var(--black);
   background-image: url("./images/large-triangles.svg");
 }
 h1 {

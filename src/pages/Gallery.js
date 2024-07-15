@@ -49,6 +49,7 @@ const Gallery = () => {
           name="twitter:image"
           content="https://oiltarator.com/images/share.png"
         />
+        <link href="/gallery" rel="canonical" />
       </Helmet>
       <h1>{t("nav3")}</h1>
       <div className="gallery-grid">

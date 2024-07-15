@@ -1,5 +1,6 @@
 {
   "name": "OilTarator",
+  "short_name": "OilTarator",
   "icons": [
     {
       "src": "favicon/favicon.ico",
@@ -17,24 +18,24 @@
       "type": "image/png"
     },
     {
-      "src": "apple-touch-icon.png",
+      "src": "favicon/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "favicon/andoid-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "favicon/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "theme_color": "#63b0b8",
   "background_color": "#63b0b8",
-  "display": "browser",
+  "display": "standalone",
   "scope": "/",
   "start_url": "/"
 }
