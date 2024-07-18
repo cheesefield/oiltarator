@@ -9,15 +9,29 @@ const Gallery = () => {
   const { t } = useTranslation();
 
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalImg, setModalImg] = useState("");
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const openModal = (largeImage) => {
-    setModalImg(largeImage);
+  const openModal = (index) => {
+    setCurrentIndex(index);
     setModalOpen(true);
   };
 
   const closeModal = () => {
     setModalOpen(false);
+  };
+
+  const showPrevImage = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const showNextImage = (e) => {
+    e.stopPropagation();
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   return (
@@ -54,14 +68,14 @@ const Gallery = () => {
       <h1>{t("nav3")}</h1>
       <div className="gallery-grid">
         {images.map((image, index) => (
-          <div key={index} className="gallery-item">
+          <div key={image.id} className="gallery-item">
             <img
               src={image.thumbnail}
               alt={image.alt}
               height="300"
               width="300"
               className="gallery-img"
-              onClick={() => openModal(image.large)}
+              onClick={() => openModal(index)}
               loading="lazy"
             />
           </div>
@@ -73,7 +87,17 @@ const Gallery = () => {
           <span className="close" onClick={closeModal}>
             &times;
           </span>
-          <img className="modal-content" src={modalImg} alt="Large view" />
+          <img
+            className="modal-content"
+            src={images[currentIndex].large}
+            alt={images[currentIndex].alt}
+          />
+          <button className="prev" onClick={showPrevImage}>
+            &#10094;
+          </button>
+          <button className="next" onClick={showNextImage}>
+            &#10095;
+          </button>
         </div>
       )}
     </div>

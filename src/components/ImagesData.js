@@ -14,66 +14,79 @@ import kamiony from "../images/kamiony.jpg";
 
 const images = [
   {
+    id: 1,
     thumbnail: basicday,
     large: basicday,
     alt: "Gallery Image 1",
   },
   {
+    id: 2,
     thumbnail: basicday2,
     large: basicday2,
     alt: "Gallery Image 2",
   },
   {
+    id: 3,
     thumbnail: basicday3,
     large: basicday3,
     alt: "Gallery Image 3",
   },
   {
+    id: 4,
     thumbnail: kamery,
     large: kamery,
     alt: "Gallery Image 4",
   },
   {
+    id: 5,
     thumbnail: firma,
     large: firma,
     alt: "Gallery Image 5",
   },
   {
+    id: 6,
     thumbnail: kamion,
     large: kamion,
     alt: "Gallery Image 6",
   },
   {
+    id: 7,
     thumbnail: nadoby_na_olej,
     large: nadoby_na_olej,
     alt: "Gallery Image 7",
   },
   {
+    id: 8,
     thumbnail: nadoby2,
     large: nadoby2,
     alt: "Gallery Image 8",
   },
   {
+    id: 9,
     thumbnail: vozitko2,
     large: vozitko2,
     alt: "Gallery Image 9",
   },
   {
+    id: 10,
     thumbnail: smes_oleje,
     large: smes_oleje,
     alt: "Gallery Image 10",
   },
   {
+    id: 11,
     thumbnail: kamiony,
     large: kamiony,
     alt: "Gallery Image 11",
   },
   {
+    id: 12,
     thumbnail: vozitko,
     large: vozitko,
     alt: "Gallery Image 12",
   },
   {
+    id: 14,
     thumbnail: olej,
     large: olej,
     alt: "Gallery Image 13",
