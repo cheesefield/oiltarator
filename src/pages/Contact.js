@@ -43,7 +43,7 @@ function Contact() {
           name="twitter:image"
           content="https://oiltarator.com/images/share.png"
         />
-        <link href="/contact" rel="canonical" />
+        <link href="www.oiltarator.com/contact" rel="canonical" />
       </Helmet>
       <div className="center">
         <h1>{t("contacth1")}</h1>

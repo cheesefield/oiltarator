@@ -45,9 +45,15 @@ function Homepage() {
           name="twitter:image"
           content="https://oiltarator.com/images/share.png"
         />
+        <link href="www.oiltarator.com" rel="canonical" />
       </Helmet>
       <section className="brana">
-        <img src={hlavni_brana} alt="hlavni brana"></img>
+        <img
+          src={hlavni_brana}
+          alt="hlavni brana"
+          height="325"
+          width="720"
+        ></img>
         <div className="homepage">
           <h1>{t("homepage")}</h1>
           <h3>{line1}</h3>
@@ -63,6 +69,7 @@ function Homepage() {
             <img
               src={soybean}
               height="350"
+              width="350"
               loading="lazy"
               alt="hlavni brana"
             ></img>
@@ -72,6 +79,7 @@ function Homepage() {
             <img
               src={sunflower}
               height="350"
+              width="350"
               loading="lazy"
               alt="hlavni brana"
             ></img>
@@ -81,6 +89,7 @@ function Homepage() {
             <img
               src={rapeseed}
               height="350"
+              width="350"
               loading="lazy"
               alt="hlavni brana"
             ></img>

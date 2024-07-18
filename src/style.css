@@ -154,6 +154,7 @@ nav .btn-container-open {
   display: block;
   position: relative;
   width: 100vw;
+  height: auto;
 }
 .homepage {
   display: flex;
@@ -213,6 +214,7 @@ section .oil {
 
 section .oil img {
   height: 350px;
+  width: 350px;
   display: block;
   transition: all 0.5s ease-out allow-discrete;
 }
@@ -220,12 +222,13 @@ section .oil img {
 section .oil img:hover {
   opacity: 0.6;
   height: 365px;
+  width: 365px;
 }
 
 section .oil h3 {
   font-family: "Playwrite GB S", cursive;
   font-optical-sizing: auto;
-  background-color: rgba(99, 176, 184, 1);
+  background-color: var(--darkblue);
   color: var(--white);
   font-weight: 800;
   text-transform: uppercase;
@@ -426,17 +429,21 @@ span svg {
 @media screen and (max-width: 1231px) {
   section .oil img {
     height: 300px;
+    width: 300px;
   }
   section .oil img:hover {
     height: 315px;
+    width: 315px;
   }
 }
 @media screen and (max-width: 1073px) {
   section .oil img {
     height: 250px;
+    width: 250px;
   }
   section .oil img:hover {
     height: 265px;
+    width: 265px;
   }
 }
 @media screen and (max-width: 992px) {
