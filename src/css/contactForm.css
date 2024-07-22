@@ -1,8 +1,6 @@
 .contact-form-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
   flex: 1;
   max-width: 500px;
 }
@@ -45,12 +43,20 @@
   z-index: 1000;
 }
 
-.form-group input:focus,
-.form-group input:valid {
-  background-color: var(--blue);
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--blue);
+}
+
+.form-group input:focus::placeholder,
+.form-group input:valid::placeholder,
+.form-group textarea:focus::placeholder,
+.form-group textarea:valid::placeholder {
   color: var(--white);
 }
 
+.form-group input:focus,
+.form-group input:valid,
 .form-group textarea:focus,
 .form-group textarea:valid {
   background-color: var(--blue);

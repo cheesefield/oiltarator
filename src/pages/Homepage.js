@@ -18,17 +18,17 @@ function Homepage() {
   return (
     <div className="main">
       <Helmet>
-        <title>OilTarator</title>
+        <title>OilTarator • Oil trading company</title>
         <meta name="title" content="OilTarator" />
         <meta
           name="description"
-          content="We are a trading company operating extensively in the technical vegetable oil trade industry."
+          content="Trading company operating extensively in the technical vegetable oil trade industry in Ostrava."
         />
         <meta property="og:url" content="https://oiltarator.com/" />
         <meta property="og:title" content="OilTarator" />
         <meta
           property="og:description"
-          content="We are a trading company operating extensively in the technical vegetable oil trade industry."
+          content="Trading company operating extensively in the technical vegetable oil trade industry in Ostrava."
         />
         <meta
           property="og:image"
@@ -39,7 +39,7 @@ function Homepage() {
         <meta name="twitter:title" content="OilTarator" />
         <meta
           name="twitter:description"
-          content="We are a trading company operating extensively in the technical vegetable oil trade industry."
+          content="Trading company operating extensively in the technical vegetable oil trade industry in Ostrava."
         />
         <meta
           name="twitter:image"

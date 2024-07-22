@@ -3,11 +3,8 @@ import { Helmet } from "react-helmet";
 import "../style.css"; // css
 // images
 import images from "../components/ImagesData";
-import { useTranslation } from "react-i18next";
 
 const Gallery = () => {
-  const { t } = useTranslation();
-
   const [modalOpen, setModalOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -65,7 +62,6 @@ const Gallery = () => {
         />
         <link href="www.oiltarator.com/gallery" rel="canonical" />
       </Helmet>
-      <h1>{t("nav3")}</h1>
       <div className="gallery-grid">
         {images.map((image, index) => (
           <div key={image.id} className="gallery-item">

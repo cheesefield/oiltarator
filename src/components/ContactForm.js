@@ -28,7 +28,12 @@ function ContactForm() {
 
   return (
     <div className="contact-form-container">
-      <form onSubmit={handleSubmit} className="contact-form">
+      <form
+        id="contact-form"
+        name="contact-form"
+        onSubmit={handleSubmit}
+        className="contact-form"
+      >
         <div className="form-group">
           <label htmlFor="name">{line1}</label>
           <input
