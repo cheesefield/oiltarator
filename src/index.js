@@ -1,19 +1,19 @@
 import React from "react";
-import { createRoot, hydrateRoot } from "react-dom/client";
+import "./index.css";
 import App from "./App";
-import { reportWebVitals } from "./reportWebVitals";
-import { inject } from "@vercel/analytics";
+import reportWebVitals from "./reportWebVitals";
+import { hydrateRoot, createRoot } from "react-dom/client";
 
-const rootElement = document.getElementById("root");
+const container = document.getElementById("root");
 
-if (rootElement.hasChildNodes()) {
-  hydrateRoot(rootElement, <App />);
+if (container.hasChildNodes()) {
+  hydrateRoot(container, <App />);
 } else {
-  createRoot(rootElement).render(<App />);
+  const root = createRoot(container); // createRoot(container!) if you use TypeScript
+  root.render(<App />);
 }
 
-// Initialize Vercel Analytics
-inject();
-
-// Report web vitals for speed insights
-reportWebVitals(console.log);
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
