@@ -69,6 +69,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/leaflet": "^1.9.12",
     "@types/react-helmet": "^6.1.11",
     "mkdirp": "^3.0.1",
