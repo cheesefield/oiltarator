@@ -24,7 +24,7 @@ function App() {
       <Analytics /> */}
       <Suspense fallback={<div>Loading...</div>}>
         <Router>
-          {/* <Nav /> */}
+          <Nav />
           <Routes>
             <Route path="/" element={<Homepage />} />
             {/* <Route exact path="/about" element={<About />} /> */}
@@ -33,7 +33,7 @@ function App() {
             {/* <Route exact path="/products" element={<Products />} /> */}
             <Route path="*" element={<ErrorPage />} />
           </Routes>
-          {/* <Footer /> */}
+          <Footer />
         </Router>
       </Suspense>
     </div>
