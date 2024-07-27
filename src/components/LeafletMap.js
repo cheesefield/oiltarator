@@ -24,7 +24,8 @@ function LeafletMap() {
       />
       <Marker position={[49.813343370344796, 18.297476662900173]} icon={icon}>
         <Popup>
-          OilTarator s.r.o <br />{" "}
+          OilTarator s.r.o
+          <br />
           <a
             href="https://maps.google.com/maps/dir//Lihovarsk%C3%A1+642%2F16+718+00+Slezsk%C3%A1+Ostrava-Kun%C4%8Di%C4%8Dky+Czechia/@49.8131426,18.2974981,13z/data=!4m5!4m4!1m0!1m2!1m1!1s0x4713fcae6509551b:0x79b40910bf0e6a8"
             target="_blank"

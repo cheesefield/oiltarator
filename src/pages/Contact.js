@@ -48,7 +48,7 @@ function Contact() {
       <div className="center">
         <h1>{t("contacth1")}</h1>
         <h2>{t("contacth2")}</h2>
-        <LeafletMap />
+        {/* <LeafletMap /> */}
       </div>
       <div className="contact-container">
         <div className="contact-info">
