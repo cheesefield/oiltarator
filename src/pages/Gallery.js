@@ -79,7 +79,7 @@ const Gallery = () => {
       </div>
 
       {modalOpen && (
-        <div id="modal" className="modal" onClick={closeModal}>
+        <div id="modal" className="modal">
           <span className="close" onClick={closeModal}>
             &times;
           </span>
