@@ -11,9 +11,7 @@ function ContactForm() {
     { returnObjects: true }
   );
 
-  const formKey = process.env.REACT_APP_FORM_API_KEY;
-
-  const [state, handleSubmit] = useForm(formKey);
+  const [state, handleSubmit] = useForm("manwypda");
 
   if (state.submitting) {
     return <p>Submitting…</p>;
