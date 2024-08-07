@@ -1,7 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { FaOilCan, FaGlobe, FaCalendarAlt } from "react-icons/fa";
 // images
+import images from "../components/ImagesData.js";
 import hlavni_brana from "../images/hlavni_brana.jpeg";
 import sunflower from "../images/sunflower_oil_desk.jpeg";
 import soybean from "../images/soybean_oil_desk.jpeg";
@@ -14,6 +16,16 @@ function Homepage() {
   const { t } = useTranslation();
 
   const { line1, line2, line3, line4, line5 } = t("description");
+  const {
+    numbervalue1,
+    numberlabel1,
+    numbervalue2,
+    numberlabel2,
+    numbervalue3,
+    numberlabel3,
+  } = t("funnumbers");
+
+  const showroomImages = images.slice(5, 9);
 
   return (
     <div className="main">
@@ -97,6 +109,41 @@ function Homepage() {
           </div>
         </div>
         <h3 className="description">{line3}</h3>
+      </section>
+      {/* <section className="numbers_section">
+        <div className="number_row">
+          <FaOilCan className="icon" />
+          <div className="number_value">{numbervalue1}</div>
+          <div className="number_label">{numberlabel1}</div>
+        </div>
+        <div className="number_row">
+          <FaGlobe className="icon" />
+          <div className="number_value">{numbervalue2}</div>
+          <div className="number_label">{numberlabel2}</div>
+        </div>
+        <div className="number_row">
+          <FaCalendarAlt className="icon" />
+          <div className="number_value">{numbervalue3}</div>
+          <div className="number_label">{numberlabel3}</div>
+        </div>
+      </section> */}
+      <section className="showroom">
+        <h2>{t("showroom_heading")}</h2>
+        <div className="showroom-images">
+          {showroomImages.map((image) => (
+            <div key={image.id} className="showroom-image">
+              <img
+                src={image.thumbnail}
+                alt={image.alt}
+                height="350"
+                width="350"
+              />
+            </div>
+          ))}
+        </div>
+        <Link to="/gallery" className="showroom-link">
+          {t("showroom")}
+        </Link>
       </section>
       <p className="company_description">{line4}</p>
       <div className="greeting_flex">

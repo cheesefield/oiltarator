@@ -1,16 +1,25 @@
 {
-  "headline": "O nas",
   "homepage": "OilTarator s.r.o.",
   "description": {
-    "line1": "Firma handlowa o szerokim zakresie działalności w branży handlu technicznymi olejami roślinnymi w Ostrawie.",
+    "line1": "Twój najlepszy wybór olejów technicznych!",
     "line2": "W ofercie naszych olejów technicznych można znaleźć szeroki zakres rodzajów i jakości, od czystych olejów roślinnych:",
     "line3": "po oleje o podwyższonej kwasowości, oraz miksy olejów roślinnych przygotowywane specjalnie na zamówienie klienta, pod określone parametry.",
     "line4": "Oiltarator s.r.o. posiada nowoczesne zaplecze techniczne z pojemnością magazynowanie towaru do 1300 ton. Nasza baza mieści się w Ostravie, ok. 20 km do granicy z Polską, niedaleko zjazdu z autostrady, co znacznie ułatwia organizację transportu. Jako firma świadczymy również usługi magazynowania towaru, oraz przeładunku. ",
     "line5": "Zapraszamy do współpracy. Chętnie odpowiemy na wszystkie Państwa pytania. "
   },
+  "funnumbers": {
+    "numbervalue1": "1 000 000 Litrów",
+    "numberlabel1": "Sprzedany Olej",
+    "numbervalue2": "50 Krajów",
+    "numberlabel2": "Obsługiwane Kraje",
+    "numbervalue3": "10 Lat",
+    "numberlabel3": "Na Rynku"
+  },
   "oil1": "sojowego",
   "oil2": "słonecznikowego",
   "oil3": "rzepakowego",
+  "showroom_heading": "Jak to tutaj wygląda",
+  "showroom": "Pokaż wszystkie obrazy",
   "nav1": "Dom",
   "nav2": "Kontakt",
   "nav3": "Galeria",

@@ -1,16 +1,25 @@
 {
-  "headline": "O nás",
   "homepage": "OilTarator s.r.o.",
   "description": {
-    "line1": "Obchodní firma s širokým záběrem na trhu s technickými oleji rostlinného původu v Ostravě.",
+    "line1": "Vaše nejlepší volba technických olejů!",
     "line2": "V nabídce našich technických olejů můžete najít rozsáhle spektrum druhů a jakosti od čistých rostlinných olejů:",
     "line3": "až po oleje se zvýšenou hodnotou mastných kyselin. Umíme připravit mix rostlinných olejů, dle požadovaných parametrů zákazníka. ",
     "line4": "Oiltarator s.r.o. využívá moderní technické vybavení se skladovou kapacitou až 1 300 tun. Naše firma se nachází v Ostravě, 20 km od hranic z Polska poblíž sjezdu z dálnice v dobrém dopravním dosahu, což velmi zjednodušuje organizaci transportu. Zabýváme se také uskladňováním olejů a jejich překládkou. ",
     "line5": "Těšíme se na spolupráci. Rádi zodpovíme všechny Vaše dotazy."
   },
+  "funnumbers": {
+    "numbervalue1": "1,000,000 Litrů",
+    "numberlabel1": "Prodaného Oleje",
+    "numbervalue2": "50 Zemí",
+    "numberlabel2": "Obslouženo Zemí",
+    "numbervalue3": "10 Let",
+    "numberlabel3": "V Podnikání"
+  },
   "oil1": "sojový",
   "oil2": "slunečnicový",
   "oil3": "řepkový",
+  "showroom_heading": "Jak to u nás vypadá",
+  "showroom": "Ukázat všechny obrázky",
   "nav1": "Domů",
   "nav2": "Kontakt",
   "nav3": "Galerie",
