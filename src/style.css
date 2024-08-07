@@ -667,6 +667,7 @@ span svg {
     font-size: 25px;
   }
   .homepage button {
+    border: 2px solid rgba(141, 243, 254, 1);
     font-size: 0.8rem;
     margin: 20px 0;
     padding: 5px 10px;
@@ -713,6 +714,7 @@ span svg {
     font-size: 0.9rem;
   }
   .homepage button {
+    border: 1px solid rgba(141, 243, 254, 1);
     font-size: 0.5rem;
     margin: 10px 0;
   }
