@@ -46,13 +46,9 @@ function Contact() {
         <link href="www.oiltarator.com/contact" rel="canonical" />
       </Helmet>
       <div className="center">
-        <section className="map-container">
-          <h1>{t("contacth1")}</h1>
-          <div>
-            <h2>{t("contacth2")}</h2>
-            <LeafletMap />
-          </div>
-        </section>
+        <h1>{t("contacth1")}</h1>
+        <h2>{t("contacth2")}</h2>
+        <LeafletMap />
       </div>
       <div className="contact-container">
         <div className="contact-info">
