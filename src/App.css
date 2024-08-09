@@ -2,7 +2,7 @@
   --black: #252525;
   --white: #efefed;
   --blue: #63b0b8;
-  --darkblue: rgb(0, 123, 136);
+  --darkblue: #007b88;
 }
 * {
   box-sizing: border-box;
@@ -108,10 +108,14 @@
 
 ::-moz-selection {
   background: var(--blue);
+  -webkit-text-fill-color: var(--white);
+  color: var(--white);
 }
 
 ::selection {
   background: var(--blue);
+  -webkit-text-fill-color: var(--white);
+  color: var(--white);
 }
 
 body {

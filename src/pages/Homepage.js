@@ -25,7 +25,7 @@ function Homepage() {
     numberlabel3,
   } = t("funnumbers");
 
-  const showroomImages = images.slice(5, 9);
+  const showroomImages = images.slice(7, 11);
 
   return (
     <div className="main">
@@ -142,7 +142,7 @@ function Homepage() {
           ))}
         </div>
         <Link to="/gallery" className="showroom-link">
-          {t("showroom")}
+          <p>{t("showroom")}</p>
         </Link>
       </section>
       <p className="company_description">{line4}</p>

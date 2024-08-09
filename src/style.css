@@ -201,9 +201,13 @@ h3 {
 
 .homepage h1 {
   margin: 0;
-  margin-bottom: 10px;
-  font-size: 80px;
+  font-size: clamp(2rem, 5vw + 1rem, 7rem);
   text-align: left;
+  color: #7cdde7;
+  background: #7cdde7;
+  background: linear-gradient(to bottom right, #7cdde7 0%, #007b88 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .homepage h3 {
@@ -211,7 +215,7 @@ h3 {
   font-weight: 400;
   text-align: left;
   width: 50%;
-  font-size: 35px;
+  font-size: clamp(0.8rem, 3vw + 0.3rem, 2rem);
 }
 
 .homepage button {
@@ -219,7 +223,7 @@ h3 {
   padding: 10px 15px;
   margin: 40px 0;
   color: var(--black);
-  font-size: 0.9rem;
+  font-size: clamp(0.5rem, 1.5vw + 0.2rem, 0.9rem);
   font-weight: 800;
   background: linear-gradient(
     96deg,
@@ -256,19 +260,19 @@ section .oils {
 section .oil {
   margin: 20px;
   max-width: fit-content;
-}
-
-section .oil img {
-  height: 350px;
-  width: 350px;
-  display: block;
   transition: all 0.5s ease-out allow-discrete;
 }
 
-section .oil img:hover {
-  opacity: 0.6;
-  height: 365px;
-  width: 365px;
+section .oil:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+section .oil img {
+  display: block;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
 }
 
 section .oil h3 {
@@ -373,7 +377,7 @@ section .number_label {
 }
 
 .showroom-link:hover {
-  color: var(--blue);
+  color: var(--black);
 }
 
 section h3.description {
@@ -562,26 +566,6 @@ span svg {
   font-weight: 600;
   border-top: solid 1px var(--black);
 }
-@media screen and (max-width: 1231px) {
-  section .oil img {
-    height: 300px;
-    width: 300px;
-  }
-  section .oil img:hover {
-    height: 315px;
-    width: 315px;
-  }
-}
-@media screen and (max-width: 1073px) {
-  section .oil img {
-    height: 250px;
-    width: 250px;
-  }
-  section .oil img:hover {
-    height: 265px;
-    width: 265px;
-  }
-}
 @media screen and (max-width: 992px) {
   nav .menu-btn__burger {
     display: flex;
@@ -657,19 +641,9 @@ span svg {
     padding: 0 40px;
   }
 
-  .homepage h1 {
-    font-size: 60px;
-    margin-bottom: 5px;
-  }
-
-  .homepage h3 {
-    width: 60%;
-    font-size: 25px;
-  }
   .homepage button {
     border: 2px solid rgba(141, 243, 254, 1);
-    font-size: 0.8rem;
-    margin: 20px 0;
+    margin: 30px 0;
     padding: 5px 10px;
   }
 
@@ -694,29 +668,13 @@ span svg {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .homepage h1 {
-    font-size: 50px;
-  }
-  .homepage h3 {
-    font-size: 20px;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .homepage {
     padding: 0 25px;
   }
-  .homepage h1 {
-    font-size: 1.8rem;
-  }
-  .homepage h3 {
-    font-size: 0.9rem;
-  }
   .homepage button {
     border: 1px solid rgba(141, 243, 254, 1);
-    font-size: 0.5rem;
-    margin: 10px 0;
+    margin: 15px 0;
   }
   .row .column {
     flex: 100%;
@@ -735,6 +693,11 @@ span svg {
   }
   .error_page section h3 {
     font-size: 1em !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  section .oil img {
+    height: 90vw;
   }
 }
 @media screen and (max-width: 279px) {
