@@ -133,7 +133,7 @@ nav .btn-container-open {
 .main {
   display: block;
   margin: 0 2rem;
-  width: 95vw;
+  width: 85vw;
   margin: 0 auto;
   padding: 115px 0 10px;
 }
@@ -143,7 +143,7 @@ nav .btn-container-open {
 .brana {
   display: flex;
   position: relative;
-  margin-left: -2.63%;
+  margin-left: -7.5vw;
   margin-top: -4px;
   width: 100vw;
   flex-direction: column;
@@ -174,29 +174,14 @@ nav .btn-container-open {
     rgba(0, 0, 0, 0) 100%
   );
   justify-content: center;
+  overflow: hidden; /* Ensure no overflow during animation */
 }
-.center {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-.center h2 {
-  font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 1.6rem;
-  font-size: 1.4rem;
-}
-.leaflet-container {
-  height: 400px;
-  margin: 0;
-  width: 80%;
-}
-h1,
-h2,
-h3 {
-  text-align: center;
+
+.homepage h1,
+.homepage h3 {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideIn 1s ease-out forwards;
 }
 
 .homepage h1 {
@@ -208,6 +193,7 @@ h3 {
   background: linear-gradient(to bottom right, #7cdde7 0%, #007b88 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation-delay: 0.5s; /* Delay for h1 */
 }
 
 .homepage h3 {
@@ -216,6 +202,18 @@ h3 {
   text-align: left;
   width: 50%;
   font-size: clamp(0.8rem, 3vw + 0.3rem, 2rem);
+  animation-delay: 1s; /* Delay for h3 */
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .homepage button {
@@ -235,7 +233,12 @@ h3 {
   border: 3px solid rgba(141, 243, 254, 1);
   cursor: pointer;
   transition: all 0.7s ease-in-out;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: fadeInScale 1s ease-out forwards;
+  animation-delay: 1.5s; /* Delay for button */
 }
+
 .homepage button:hover {
   background-color: var(--blue);
   background: linear-gradient(
@@ -248,6 +251,17 @@ h3 {
   border: 3px solid rgba(99, 176, 184, 1);
 }
 
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 section.oil_section {
   margin: 2.5rem 0;
 }
@@ -256,16 +270,25 @@ section .oils {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 40px 0;
+  perspective: 1000px; /* Creates a 3D space for the tilt effect */
+  overflow: hidden; /* Ensures the image stays within the boundaries of the gallery item */
 }
 section .oil {
   margin: 20px;
   max-width: fit-content;
-  transition: all 0.5s ease-out allow-discrete;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transform-origin: center;
 }
 
 section .oil:hover {
-  opacity: 0.7;
-  transform: scale(1.05);
+  transform: scale(1.1) rotateZ(3deg) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+section .oil:hover::after {
+  transform: translateZ(50px);
+  opacity: 1;
 }
 
 section .oil img {
@@ -524,6 +547,25 @@ section h3.description {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+}
+
+.center {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.center h2 {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+}
+.leaflet-container {
+  height: 400px;
+  margin: 0;
+  width: 80%;
 }
 
 .contact-info {
