@@ -71,7 +71,7 @@ nav .fa-globe {
   height: 1.5em;
   width: 1.5em;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 2rem;
 }
 nav .fa-globe:hover {
   color: rgba(245, 254, 255, 0.6);
@@ -539,23 +539,39 @@ section h3.description {
   align-items: flex-start;
 }
 
-.center {
+.map-container {
   display: flex;
-  width: 100%;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
 }
-.center h2 {
-  font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 1.6rem;
-  font-size: 1.4rem;
+
+.map-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2.2rem;
 }
-.leaflet-container {
-  height: 400px;
+
+section .map-flex {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
   margin: 0;
-  width: 80%;
+  background-color: var(--darkblue);
+  color: var(--white);
+  align-items: center;
+}
+section .map-flex h2 {
+  max-width: 40%;
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.6rem;
+  padding: 50px;
+}
+section .leaflet-container {
+  height: 700px;
+  margin: 0;
+  width: 100%;
 }
 
 .contact-info {
@@ -657,7 +673,7 @@ span svg {
     margin: 15px -15px;
   }
   nav .fa-globe {
-    margin-top: 20px;
+    margin-top: 2rem;
     margin-left: 0;
   }
   span.language a {
@@ -687,6 +703,26 @@ span svg {
     margin-top: 10vh;
     margin-left: 0;
   }
+
+  section.map-container {
+    margin-bottom: 2.5rem;
+  }
+
+  section .map-flex {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  section .map-flex h2 {
+    max-width: max-content;
+    font-size: 1.4rem;
+    padding: 30px;
+  }
+
+  section .leaflet-container {
+    height: 500px;
+  }
+
   .contact-form-container {
     width: 80vw;
   }
@@ -708,6 +744,11 @@ span svg {
     border: 1px solid rgba(141, 243, 254, 1);
     margin: 15px 0;
   }
+
+  section.map-container h1 {
+    font-size: 2rem;
+  }
+
   .row .column {
     flex: 100%;
   }
@@ -717,6 +758,10 @@ span svg {
 }
 
 @media screen and (max-width: 584px) {
+  section .map-flex h2 {
+    font-size: large;
+  }
+
   .error_page section {
     width: 85% !important;
   }
