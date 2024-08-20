@@ -13,27 +13,27 @@ function ErrorPage() {
     <div>
       <Helmet>
         <title>Error 404 - Page Not Found</title>
-        <meta name="title" content="Error 404 - Page Not Found | OilTarator" />
+        <meta name="title" content="OilTarator" />
         <meta
           name="description"
-          content="Looks like you got lost. Let's find a way out."
+          content="Looks like you got lost. Let´s find a way out"
         />
-        <meta property="og:url" content="https://www.oiltarator.com/404" />
-        <meta property="og:title" content="Error 404 - Page Not Found" />
+        <meta property="og:url" content="https://www.oiltarator.com/*" />
+        <meta property="og:title" content="Error 404(Page Not Found)" />
         <meta
           property="og:description"
-          content="Looks like you got lost. Let's find a way out."
+          content="Vypadá to, že jsi se ztratil, ale pokud tohle čteš, tak veřím, že najdeš cestu ven."
         />
         <meta
           property="og:image"
           content="https://www.oiltarator.com/images/share.png"
         />
 
-        <meta name="twitter:url" content="https://www.oiltarator.com/404" />
-        <meta name="twitter:title" content="Error 404 - Page Not Found" />
+        <meta name="twitter:url" content="https://www.oiltarator.com/*" />
+        <meta name="twitter:title" content="Error 404(Page Not Found)" />
         <meta
           name="twitter:description"
-          content="Looks like you got lost. Let's find a way out."
+          content="Looks like you got lost. Let´s find a way out"
         />
         <meta
           name="twitter:image"
@@ -41,7 +41,7 @@ function ErrorPage() {
         />
       </Helmet>
       <main className="error_page">
-        <img src={oil_factory} alt="Background of an oil factory" />
+        <img src={oil_factory} alt="Oil factory background" />
         <section>
           <h1>ERROR 404</h1>
           <p>{line1}</p>

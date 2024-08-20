@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-// import { FaOilCan, FaGlobe, FaCalendarAlt } from "react-icons/fa";
+import { FaOilCan, FaGlobe, FaCalendarAlt } from "react-icons/fa";
 // images
 import images from "../components/ImagesData.js";
 import hlavni_brana from "../images/hlavni_brana.jpeg";
@@ -16,14 +16,14 @@ function Homepage() {
   const { t } = useTranslation();
 
   const { line1, line2, line3, line4, line5 } = t("description");
-  // const {
-  //   numbervalue1,
-  //   numberlabel1,
-  //   numbervalue2,
-  //   numberlabel2,
-  //   numbervalue3,
-  //   numberlabel3,
-  // } = t("funnumbers");
+  const {
+    numbervalue1,
+    numberlabel1,
+    numbervalue2,
+    numberlabel2,
+    numbervalue3,
+    numberlabel3,
+  } = t("funnumbers");
 
   const showroomImages = images.slice(7, 11);
 
