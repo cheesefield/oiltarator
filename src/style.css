@@ -1,3 +1,36 @@
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes appear_left {
+  from {
+    transform: translate(-400%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear_right {
+  from {
+    transform: translate(400%, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,7 +48,7 @@ nav {
   transition: 0.6s;
   padding: 15px 30px;
   background-color: var(--blue);
-  box-shadow: 0 5px 15px rgba(55, 55, 55, 1);
+  box-shadow: 0 5px 15px var(--blue);
   color: var(--black);
   user-select: none;
   font-family: Optima, sans-serif;
@@ -251,17 +284,6 @@ nav .btn-container-open {
   border: 3px solid rgba(99, 176, 184, 1);
 }
 
-@keyframes fadeInScale {
-  0% {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 section.oil_section {
   margin: 2.5rem 0;
 }
@@ -275,6 +297,10 @@ section .oil {
   margin: 20px;
   max-width: fit-content;
   transition: all 0.5s ease-out allow-discrete;
+  animation: appear_left linear;
+  animation-timeline: view();
+  animation-duration: 5ms;
+  animation-range: entry 0% cover 40%;
 }
 
 section .oil:hover {
@@ -370,6 +396,10 @@ section .number_label {
   flex: 1 1 350px;
   max-width: 350px;
   box-sizing: border-box;
+  animation: appear_right linear;
+  animation-timeline: view();
+  animation-duration: 5ms;
+  animation-range: entry 0% cover 40%;
 }
 
 .showroom-image img {
@@ -555,7 +585,7 @@ section h3.description {
 section .map-flex {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: 90%;
   margin: 0;
   background-color: var(--darkblue);
   color: var(--white);
@@ -566,7 +596,7 @@ section .map-flex h2 {
   font-weight: 500;
   margin: 0;
   font-size: 1.6rem;
-  padding: 50px;
+  padding: 0 40px;
 }
 section .leaflet-container {
   height: 700px;
@@ -747,6 +777,10 @@ span svg {
   .homepage button {
     border: 1px solid rgba(141, 243, 254, 1);
     margin: 15px 0;
+  }
+
+  section .map-flex {
+    width: 100%;
   }
 
   section.map-container h1 {
