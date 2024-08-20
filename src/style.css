@@ -224,6 +224,7 @@ nav .btn-container-open {
   color: #7cdde7;
   background: #7cdde7;
   background: linear-gradient(to bottom right, #7cdde7 0%, #007b88 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation-delay: 0.5s; /* Delay for h1 */
