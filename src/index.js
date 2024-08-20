@@ -2,15 +2,15 @@ import React from "react";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { hydrateRoot, createRoot } from "react-dom/client";
+import { hydrate, render } from "react-dom";
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 
-const container = document.getElementById("root");
-
-if (container.hasChildNodes()) {
-  hydrateRoot(container, <App />);
+const rootElement = document.getElementById("root");
+if (rootElement.hasChildNodes()) {
+  hydrate(<App />, rootElement);
 } else {
-  const root = createRoot(container); // createRoot(container!) if you use TypeScript
-  root.render(<App />);
+  render(<App />, rootElement);
 }
 
 // If you want to start measuring performance in your app, pass a function
