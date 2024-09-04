@@ -8,7 +8,9 @@ function Footer() {
 
   return (
     <div className="footer">
-      <p>{t("footer")} &copy; 2024</p>
+      <p suppressHydrationWarning={true}>
+        {t("footer")} &copy; {currentYear}
+      </p>
     </div>
   );
 }
