@@ -4,7 +4,6 @@ import "../i18.js";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import sklad_krupka from "../images/sklad_krupka.jpeg";
-import { FaExclamation } from "react-icons/fa";
 
 function Banner() {
   const { t } = useTranslation();
