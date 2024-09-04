@@ -8,9 +8,7 @@ function Footer() {
 
   return (
     <div className="footer">
-      <p>
-        {t("footer")} &copy; {currentYear}
-      </p>
+      <p>{t("footer")} &copy; 2024</p>
     </div>
   );
 }
