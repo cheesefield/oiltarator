@@ -1,6 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+
+import Banner from "../components/Banner.js";
+
 // import { FaOilCan, FaGlobe, FaCalendarAlt } from "react-icons/fa";
 // images
 import images from "../components/ImagesData.js";
@@ -60,12 +63,7 @@ function Homepage() {
         <link href="www.oiltarator.com" rel="canonical" />
       </Helmet>
       <section className="brana">
-        <img
-          src={hlavni_brana}
-          alt="hlavni brana"
-          height="325"
-          width="720"
-        ></img>
+        <img src={hlavni_brana} alt="hlavni brana" height="325" width="720" />
         <div className="homepage">
           <h1>{t("homepage")}</h1>
           <h3>{line1}</h3>
@@ -74,6 +72,7 @@ function Homepage() {
           </Link>
         </div>
       </section>
+      <Banner />
       <section className="oil_section">
         <h2>{line2}</h2>
         <div className="oils">
@@ -84,7 +83,7 @@ function Homepage() {
               width="350"
               loading="lazy"
               alt="hlavni brana"
-            ></img>
+            />
             <h3>{t("oil1")}</h3>
           </div>
           <div className="oil">
@@ -94,7 +93,7 @@ function Homepage() {
               width="350"
               loading="lazy"
               alt="hlavni brana"
-            ></img>
+            />
             <h3>{t("oil2")}</h3>
           </div>
           <div className="oil">
@@ -104,7 +103,7 @@ function Homepage() {
               width="350"
               loading="lazy"
               alt="hlavni brana"
-            ></img>
+            />
             <h3>{t("oil3")}</h3>
           </div>
         </div>

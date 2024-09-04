@@ -239,6 +239,62 @@ nav .btn-container-open {
   animation-delay: 1s; /* Delay for h3 */
 }
 
+section.banner_cointaner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section .banner-flex {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: 3rem 0;
+  background-color: var(--darkblue);
+  color: var(--white);
+  align-items: center;
+}
+
+section .banner_img {
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+
+section .banner-flex h2 {
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.9rem;
+}
+
+section .banner-flex p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+section .banner_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  text-align: center;
+}
+
+section .banner_text .blue {
+  color: #7cdde7;
+}
+
+section .banner_text button {
+  font-size: 1.1rem;
+}
+
+.banner p {
+  font-size: small;
+  margin-top: 0;
+}
+
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -596,7 +652,7 @@ section .map-flex h2 {
   max-width: 40%;
   font-weight: 500;
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 0 40px;
 }
 section .leaflet-container {
@@ -727,6 +783,27 @@ span svg {
     border: 2px solid rgba(141, 243, 254, 1);
     margin: 30px 0;
     padding: 5px 10px;
+  }
+
+  section .banner-flex {
+    flex-direction: column;
+  }
+
+  section .banner_img {
+    width: 100%;
+  }
+
+  section .banner_text {
+    padding: 25px;
+  }
+
+  section .banner_text h2 {
+    font-size: 1.6rem;
+  }
+
+  section .banner_text p,
+  section .banner_text button {
+    font-size: 0.9rem;
   }
 
   section.numbers_section {

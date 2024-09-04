@@ -29,24 +29,6 @@ function Nav() {
               {t("nav1")}
             </NavLink>
           </li>
-          {/* <li className="nav">
-            <NavLink
-              to="/about"
-              activeClassName="nav-active"
-              onClick={closeMobileMenu}
-            >
-              About
-            </NavLink>
-          </li>
-          <li className="nav">
-            <NavLink
-              to="/products"
-              activeClassName="nav-active"
-              onClick={closeMobileMenu}
-            >
-              Products
-            </NavLink>
-          </li> */}
           <li className="nav">
             <NavLink to="/contact" onClick={closeMobileMenu}>
               {t("nav2")}

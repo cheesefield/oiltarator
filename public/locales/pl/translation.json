@@ -1,5 +1,9 @@
 {
   "homepage": "OilTarator s.r.o.",
+  "banner_header1": "NOWA PLACÓWKA",
+  "banner_header2": ", lepsze ceny dla Ciebie!",
+  "banner_description": "Otworzyliśmy nowy oddział bliżej Ciebie! Dzięki temu możemy szybciej dostarczać nasze oleje i obniżyć ich ceny. Skorzystaj z naszych atrakcyjnych ofert i ciesz się jeszcze wygodniejszymi zakupami!",
+  "banner_button": "Pokaż mapę",
   "description": {
     "line1": "Twój najlepszy wybór olejów technicznych!",
     "line2": "W ofercie naszych olejów technicznych można znaleźć szeroki zakres rodzajów i jakości, od czystych olejów roślinnych:",
