@@ -1,0 +1,88 @@
+{
+  "Metadata": {
+    "homepage": {
+      "title": "Oiltarator | Oil trading company",
+      "default": "Oiltarator",
+      "description": "Trading company operating extensively in the technical vegetable oil trade industry in Ostrava."
+    },
+    "gallery": {
+      "title": "Gallery | Oiltarator",
+      "default": "Oiltarator",
+      "description": "Technical vegetable oils in Ostrava or around Prague. See our gallery."
+    },
+    "contact": {
+      "title": "Contact | Oiltarator",
+      "default": "Oiltarator",
+      "description": "Contact us for any questions about our services or technical vegetable oil."
+    },
+    "404Page": {
+      "title": "Error 404 - Page Not Found",
+      "description": "The page you are looking for was not found."
+    }
+  },
+  "Navbar": {
+    "home": "Home",
+    "contact": "Contact",
+    "gallery": "Gallery"
+  },
+  "Homepage": {
+    "imageAlt": "Main gate",
+    "companyName": "OilTarator s.r.o.",
+    "slogan": "Your best choice for technical oils!",
+    "contactButton": "Contact us",
+    "oilSectionTitle": "In the offer of our technical oils, you can find a wide range of types and qualities, from pure vegetable oils:",
+    "soybean": "Soybean",
+    "soybeanAlt": "Soybean oil",
+    "sunflower": "Sunflower",
+    "sunflowerAlt": "Sunflower oil",
+    "rapeseed": "Rapeseed",
+    "rapeseedAlt": "Rapeseed oil",
+    "oilDescription": "to oils with increased acidity, and mixtures of vegetable oils prepared especially at the customer's request, under specific parameters.",
+    "showroomTitle": "How it looks here",
+    "seeAllPictures": "See All Pictures",
+    "companyDescription": "OilTarator s.r.o. has modern technical facilities with a storage capacity of up to 1,300 tons. Our base is located in Ostrava, approx. 20 km to the Polish border, close to the motorway exit, which makes organizing transport much easier. As a company, we also provide goods storage and reloading services.",
+    "greeting": "We invite you to cooperate. We will be happy to answer all your questions."
+  },
+  "Banner": {
+    "imageAlt": "New sklad krupka",
+    "titleHighlight": "NEW LOCATION",
+    "title": "Better Prices for You",
+    "description": "We've opened a new branch closer to you! This allows us to deliver faster and lower the prices of our oils. Take advantage of our great offers and enjoy even more convenient shopping!",
+    "buttonText": "Show Map"
+  },
+  "Contact": {
+    "heading": "Where can you find us?",
+    "mapDescription": "Our branches are available to you at several locations. Please contact us in advance by phone or email to arrange a meeting or get details about our products and services. We look forward to your visit!",
+    "mapLoading": "A map is loading",
+    "contactHeading": "Contact us",
+    "contactDescription": "If you are interested in any of our services or have any questions, do not hesitate to contact us. We will be happy to answer all your questions.",
+    "ceo": "Chief Executive Officer: Rostislav Sikora",
+    "headquarters": "Headquarters: Příčná 1892/4, Nové Město, 110 00 Prague 1",
+    "address": "Lihovarská 642/16, 718 00 Slezská Ostrava-Kunčičky, Czechia"
+  },
+  "Leaflet": {
+    "route": "View Route"
+  },
+  "Loading": {
+    "loadingMessage": "Loading map..."
+  },
+  "ContactForm": {
+    "submitting": "Submitting…",
+    "success": "Form was submitted successfully!",
+    "reset": "Reset",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "messagePlaceholder": "Write us a message!",
+    "send": "Send"
+  },
+  "Footer": {
+    "rightsReserved": "All rights reserved",
+    "designedBy": "Designed by {designer}"
+  },
+  "404Page": {
+    "title": "Looks like you got lost in the oil.",
+    "description": "The page you are looking for might have been removed, had it´s name changed or is temporarily unavailable.",
+    "button": "Take me back!"
+  }
+}

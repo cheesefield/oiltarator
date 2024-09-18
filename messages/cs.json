@@ -1,0 +1,88 @@
+{
+  "Metadata": {
+    "homepage": {
+      "title": "Oiltarator | Obchodní společnost s oleji",
+      "default": "Oiltarator",
+      "description": "Obchodní společnost působící rozsáhle v průmyslu s technickými rostlinnými oleji v Ostravě."
+    },
+    "gallery": {
+      "title": "Galerie | Oiltarator",
+      "default": "Oiltarator",
+      "description": "Technické rostlinné oleje v Ostravě a okolí Prahy. Podívejte se na naši galerii."
+    },
+    "contact": {
+      "title": "Kontakt | Oiltarator",
+      "default": "Oiltarator",
+      "description": "Kontaktujte nás s jakýmikoliv dotazy ohledně našich služeb nebo technických rostlinných olejů."
+    },
+    "404Page": {
+      "title": "Chyba 404 - Stránka nebyla nalezena",
+      "description": "Stránka, kterou hledáte, nebyla nalezena."
+    }
+  },
+  "Navbar": {
+    "home": "Domů",
+    "contact": "Kontakt",
+    "gallery": "Galerie"
+  },
+  "Homepage": {
+    "imageAlt": "Hlavní brána",
+    "companyName": "OilTarator s.r.o.",
+    "slogan": "Vaše nejlepší volba pro technické oleje!",
+    "contactButton": "Kontaktujte nás",
+    "oilSectionTitle": "V naší nabídce technických olejů najdete širokou škálu typů a kvalit, od čistých rostlinných olejů:",
+    "soybean": "Sója",
+    "soybeanAlt": "Sójový olej",
+    "sunflower": "Slunečnice",
+    "sunflowerAlt": "Slunečnicový olej",
+    "rapeseed": "Řepka",
+    "rapeseedAlt": "Řepkový olej",
+    "oilDescription": "až po oleje se zvýšenou kyselostí a směsi rostlinných olejů připravené speciálně na žádost zákazníka, podle specifických parametrů.",
+    "showroomTitle": "Jak to tu vypadá",
+    "seeAllPictures": "Zobrazit všechny obrázky",
+    "companyDescription": "OilTarator s.r.o. má moderní technické zařízení s kapacitou skladování až 1 300 tun. Naše základna se nachází v Ostravě, cca 20 km od polské hranice, poblíž výjezdu na dálnici, což usnadňuje organizaci dopravy. Jako firma také poskytujeme skladování zboží a překládací služby.",
+    "greeting": "Zveme vás ke spolupráci. Rádi vám zodpovíme všechny vaše dotazy."
+  },
+  "Banner": {
+    "imageAlt": "Nový sklad krupka",
+    "titleHighlight": "NOVÁ LOKACE",
+    "title": "Lepší ceny pro vás",
+    "description": "Otevřeli jsme novou pobočku blíže k vám! To nám umožňuje rychlejší dodání a snížení cen našich olejů. Využijte našich skvělých nabídek a užijte si ještě pohodlnější nakupování!",
+    "buttonText": "Zobrazit mapu"
+  },
+  "Contact": {
+    "heading": "Kde nás najdete?",
+    "mapDescription": "Naše pobočky jsou vám k dispozici na několika místech. Pro sjednání schůzky nebo podrobnosti o našich produktech a službách nás prosím kontaktujte předem telefonicky nebo e-mailem. Těšíme se na vaši návštěvu!",
+    "mapLoading": "Mapa se načítá",
+    "contactHeading": "Kontaktujte nás",
+    "contactDescription": "Pokud máte zájem o některé z našich služeb nebo máte jakékoli dotazy, neváhejte nás kontaktovat. Rádi vám zodpovíme všechny vaše dotazy.",
+    "ceo": "Generální ředitel: Rostislav Sikora",
+    "headquarters": "Sídlo: Příčná 1892/4, Nové Město, 110 00 Praha 1",
+    "address": "Lihovarská 642/16, 718 00 Slezská Ostrava-Kunčičky, Česká republika"
+  },
+  "Leaflet": {
+    "route": "Zobrazit trasu"
+  },
+  "Loading": {
+    "loadingMessage": "Načítání mapy..."
+  },
+  "ContactForm": {
+    "submitting": "Odesílání…",
+    "success": "Formulář byl úspěšně odeslán!",
+    "reset": "Resetovat",
+    "name": "Jméno",
+    "email": "E-mail",
+    "message": "Zpráva",
+    "messagePlaceholder": "Napište nám zprávu!",
+    "send": "Odeslat"
+  },
+  "Footer": {
+    "rightsReserved": "Všechna práva vyhrazena",
+    "designedBy": "Navrhl {designer}"
+  },
+  "404Page": {
+    "title": "Vypadá to, že jste se ztratili v oleji.",
+    "description": "Stránka, kterou hledáte, mohla být odstraněna, změnila název nebo je dočasně nedostupná.",
+    "button": "Vraťte mě zpět!"
+  }
+}

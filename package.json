@@ -1,91 +1,43 @@
 {
-  "name": "web",
+  "name": "oiltarator",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://oiltarator.com/",
   "dependencies": {
     "@formspree/react": "^2.5.1",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@testing-library/jest-dom": "^6.4.8",
-    "@testing-library/react": "^16.0.0",
-    "@testing-library/user-event": "^14.5.2",
+    "@react-google-maps/api": "^2.19.3",
+    "@types/node": "^22.5.4",
+    "@types/react": "^18.3.5",
     "@vercel/analytics": "^1.3.1",
     "@vercel/speed-insights": "^1.0.12",
-    "i18next": "^23.14.0",
-    "i18next-browser-languagedetector": "^8.0.0",
-    "i18next-http-backend": "^2.6.1",
-    "i18next-locize-backend": "^6.5.1",
-    "joi": "^17.13.3",
     "leaflet": "^1.9.4",
+    "leaflet-defaulticon-compatibility": "^0.1.2",
+    "next": "^14.2.11",
+    "next-intl": "^3.19.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-helmet": "^6.1.0",
-    "react-helmet-async": "^2.0.5",
-    "react-i18next": "^15.0.1",
     "react-icons": "^5.3.0",
     "react-leaflet": "^4.2.1",
-    "react-router-dom": "^6.26.1",
-    "react-snap": "^1.13.1",
-    "web-vitals": "^4.2.3"
+    "react-slick": "^0.30.2",
+    "sharp": "^0.33.5",
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "reactSnap": {
-    "minifyHtml": {
-      "collapseWhitespace": false,
-      "removeComments": false
-    },
-    "executablePath": "puppeteer/.local-chromium/win64-686378/chrome-win",
-    "puppeteerArgs": [
-      "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--disable-gpu"
-    ],
-    "inlineCss": true,
-    "headless": true,
-    "include": [
-      "/",
-      "/contact",
-      "/gallery"
-    ]
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/plugin-transform-class-properties": "^7.24.7",
-    "@babel/plugin-transform-nullish-coalescing-operator": "^7.24.7",
-    "@babel/plugin-transform-numeric-separator": "^7.24.7",
-    "@babel/plugin-transform-optional-chaining": "^7.24.8",
-    "@babel/plugin-transform-private-methods": "^7.24.7",
+    "@next/eslint-plugin-next": "^14.2.12",
+    "@types/googlemaps": "^3.43.3",
     "@types/leaflet": "^1.9.12",
     "@types/react-dom": "^18.3.0",
     "@types/react-helmet": "^6.1.11",
-    "customize-cra": "^1.0.0",
-    "mkdirp": "^3.0.1",
-    "puppeteer": "^23.2.1",
-    "react-app-rewired": "^2.2.1",
-    "react-scripts": "^5.0.1",
-    "rimraf": "^6.0.1"
+    "@types/react-slick": "^0.23.13",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^14.2.4",
+    "eslint-config-prettier": "^9.1.0",
+    "typescript": "^5.6.2"
   }
 }

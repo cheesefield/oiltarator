@@ -1,0 +1,88 @@
+{
+  "Metadata": {
+    "homepage": {
+      "title": "Oiltarator | Firma handlowa olejami",
+      "default": "Oiltarator",
+      "description": "Firma handlowa działająca szeroko w branży technicznych olejów roślinnych w Ostrawie."
+    },
+    "gallery": {
+      "title": "Galeria | Oiltarator",
+      "default": "Oiltarator",
+      "description": "Techniczne oleje roślinne w Ostrawie lub okolicach Pragi. Zobacz naszą galerię."
+    },
+    "contact": {
+      "title": "Kontakt | Oiltarator",
+      "default": "Oiltarator",
+      "description": "Skontaktuj się z nami, aby uzyskać informacje na temat naszych usług lub technicznych olejów roślinnych."
+    },
+    "404Page": {
+      "title": "Błąd 404 - Strona nie została znaleziona",
+      "description": "Strona, której szukasz, nie została znaleziona."
+    }
+  },
+  "Navbar": {
+    "home": "Strona główna",
+    "contact": "Kontakt",
+    "gallery": "Galeria"
+  },
+  "Homepage": {
+    "imageAlt": "Główna brama",
+    "companyName": "OilTarator s.r.o.",
+    "slogan": "Twój najlepszy wybór w zakresie olejów technicznych!",
+    "contactButton": "Skontaktuj się z nami",
+    "oilSectionTitle": "W naszej ofercie olejów technicznych znajdziesz szeroki wybór rodzajów i jakości, od czystych olejów roślinnych:",
+    "soybean": "Soja",
+    "soybeanAlt": "Olej sojowy",
+    "sunflower": "Słonecznik",
+    "sunflowerAlt": "Olej słonecznikowy",
+    "rapeseed": "Rzepak",
+    "rapeseedAlt": "Olej rzepakowy",
+    "oilDescription": "aż po oleje o podwyższonej kwasowości i mieszanki olejów roślinnych przygotowane specjalnie na prośbę klienta, według specyficznych parametrów.",
+    "showroomTitle": "Jak to tutaj wygląda",
+    "seeAllPictures": "Zobacz wszystkie zdjęcia",
+    "companyDescription": "OilTarator s.r.o. dysponuje nowoczesnym zapleczem technicznym o pojemności magazynowej do 1 300 ton. Nasza siedziba znajduje się w Ostrawie, około 20 km od granicy z Polską, blisko zjazdu z autostrady, co znacznie ułatwia organizację transportu. Jako firma oferujemy również usługi magazynowania i przeładunku towarów.",
+    "greeting": "Zapraszamy do współpracy. Chętnie odpowiemy na wszystkie Twoje pytania."
+  },
+  "Banner": {
+    "imageAlt": "Nowy sklad krupka",
+    "titleHighlight": "NOWA LOKALIZACJA",
+    "title": "Lepsze ceny dla Ciebie",
+    "description": "Otworzyliśmy nową placówkę bliżej Ciebie! Pozwoli nam to na szybszą dostawę i obniżenie cen naszych olejów. Skorzystaj z naszych wspaniałych ofert i ciesz się jeszcze bardziej wygodnymi zakupami!",
+    "buttonText": "Pokaż mapę"
+  },
+  "Contact": {
+    "heading": "Gdzie nas znaleźć?",
+    "mapDescription": "Nasze oddziały są do Państwa dyspozycji w kilku lokalizacjach. Prosimy o wcześniejszy kontakt telefoniczny lub mailowy w celu umówienia spotkania lub uzyskania szczegółów na temat naszych produktów i usług. Czekamy na Państwa wizytę!",
+    "mapLoading": "Mapa ładowania",
+    "contactHeading": "Skontaktuj się z nami",
+    "contactDescription": "Jeśli jesteś zainteresowany którąkolwiek z naszych usług lub masz jakieś pytania, nie wahaj się z nami skontaktować. Chętnie odpowiemy na wszystkie Twoje pytania.",
+    "ceo": "Dyrektor generalny: Rostislav Sikora",
+    "headquarters": "Siedziba: Příčná 1892/4, Nové Město, 110 00 Praga 1",
+    "address": "Lihovarská 642/16, 718 00 Slezská Ostrava-Kunčičky, Czechy"
+  },
+  "Leaflet": {
+    "route": "Zobacz trasę"
+  },
+  "Loading": {
+    "loadingMessage": "Ładowanie mapy..."
+  },
+  "ContactForm": {
+    "submitting": "Wysyłanie…",
+    "success": "Formularz został pomyślnie wysłany!",
+    "reset": "Resetuj",
+    "name": "Imię",
+    "email": "E-mail",
+    "message": "Wiadomość",
+    "messagePlaceholder": "Napisz do nas wiadomość!",
+    "send": "Wyślij"
+  },
+  "Footer": {
+    "rightsReserved": "Wszelkie prawa zastrzeżone",
+    "designedBy": "Zaprojektowane przez {designer}"
+  },
+  "404Page": {
+    "title": "Wygląda na to, że zgubiłeś się w oleju.",
+    "description": "Strona, której szukasz, mogła zostać usunięta, zmieniła nazwę lub jest tymczasowo niedostępna.",
+    "button": "Weź mnie z powrotem!"
+  }
+}
