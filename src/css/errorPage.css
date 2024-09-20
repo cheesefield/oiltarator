@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Reddit+Mono:wght@200..900&display=swap");
 
 main {
-  margin-bottom: -200px;
+  margin-bottom: -128px;
   height: 100vh;
 }
 
@@ -64,4 +64,13 @@ main {
   background-color: beige;
   color: black;
   transition: all 0.7s;
+}
+
+@media screen and (max-width: 992px) {
+  .error_page h1 {
+      font-size: 3em;
+  }
+  .error_page h3 {
+      font-size: 1.2em;
+  }
 }
