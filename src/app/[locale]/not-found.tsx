@@ -22,7 +22,7 @@ export default function NotFound() {
 
   return (
     <main className="error_page">
-      <Image src={oil_factory.src} alt="Oil factory background" />
+      <Image src={oil_factory.src} fill alt="Oil factory background" />
       <section>
         <h1> {t("title")}</h1>
         <p>{t("description")}</p>

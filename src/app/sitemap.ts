@@ -1,39 +1,49 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+
   return [
+    // English URLs
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}`,
+      url: `${baseUrl}/en`,
       lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${process.env.NEXT_PUBLIC_BASE_URL}/en`,
-          cs: `${process.env.NEXT_PUBLIC_BASE_URL}/cs`,
-          pl: `${process.env.NEXT_PUBLIC_BASE_URL}/pl`,
-        },
-      },
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/contact`,
+      url: `${baseUrl}/en/contact`,
       lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${process.env.NEXT_PUBLIC_BASE_URL}/en/contact`,
-          cs: `${process.env.NEXT_PUBLIC_BASE_URL}/cs/contact`,
-          pl: `${process.env.NEXT_PUBLIC_BASE_URL}/pl/contact`,
-        },
-      },
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/gallery`,
+      url: `${baseUrl}/en/gallery`,
       lastModified: new Date(),
-      alternates: {
-        languages: {
-          en: `${process.env.NEXT_PUBLIC_BASE_URL}/en/gallery`,
-          cs: `${process.env.NEXT_PUBLIC_BASE_URL}/cs/gallery`,
-          pl: `${process.env.NEXT_PUBLIC_BASE_URL}/pl/gallery`,
-        },
-      },
+    },
+
+    // Czech (cs) URLs
+    {
+      url: `${baseUrl}/cs`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/cs/contact`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/cs/gallery`,
+      lastModified: new Date(),
+    },
+
+    // Polish (pl) URLs
+    {
+      url: `${baseUrl}/pl`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/pl/contact`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${baseUrl}/pl/gallery`,
+      lastModified: new Date(),
     },
   ];
 }

@@ -58,7 +58,8 @@
     "contactDescription": "Jeśli jesteś zainteresowany którąkolwiek z naszych usług lub masz jakieś pytania, nie wahaj się z nami skontaktować. Chętnie odpowiemy na wszystkie Twoje pytania.",
     "ceo": "Dyrektor generalny: Rostislav Sikora",
     "headquarters": "Siedziba: Příčná 1892/4, Nové Město, 110 00 Praga 1",
-    "address": "Lihovarská 642/16, 718 00 Slezská Ostrava-Kunčičky, Czechy"
+    "address": "Lihovarská 642/16, 718 00 Slezská Ostrava-Kunčičky, Czechy",
+    "address2": "Nové Modlany 86, 417 42 Krupka 1, Czechy"
   },
   "Leaflet": {
     "route": "Zobacz trasę"
