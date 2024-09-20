@@ -11,27 +11,12 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/png",
       },
       {
-        src: `${process.env.NEXT_PUBLIC_BASE_URL}/favicon-16x16.png`,
-        sizes: "16x16",
-        type: "image/png",
-      },
-      {
-        src: `${process.env.NEXT_PUBLIC_BASE_URL}/favicon-32x32.png`,
-        sizes: "32x32",
-        type: "image/png",
-      },
-      {
-        src: `${process.env.NEXT_PUBLIC_BASE_URL}/apple-touch-icon.png`,
+        src: `${process.env.NEXT_PUBLIC_BASE_URL}/apple-icon.png`,
         sizes: "180x180",
         type: "image/png",
       },
       {
-        src: `${process.env.NEXT_PUBLIC_BASE_URL}/android-chrome-192x192.png`,
-        sizes: "192x192",
-        type: "image/png",
-      },
-      {
-        src: `${process.env.NEXT_PUBLIC_BASE_URL}/android-chrome-512x512.png`,
+        src: `${process.env.NEXT_PUBLIC_BASE_URL}/icon.png`,
         sizes: "512x512",
         type: "image/png",
       },
