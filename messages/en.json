@@ -75,7 +75,8 @@
     "email": "Email",
     "message": "Message",
     "messagePlaceholder": "Write us a message!",
-    "send": "Send"
+    "send": "Send",
+    "failure": "Oops! We couldn’t submit your form. Please give it another try."
   },
   "Footer": {
     "rightsReserved": "All rights reserved",

@@ -75,7 +75,8 @@
     "email": "E-mail",
     "message": "Wiadomość",
     "messagePlaceholder": "Napisz do nas wiadomość!",
-    "send": "Wyślij"
+    "send": "Wyślij",
+    "failure": "Ups! Nie mogliśmy wysłać Twojego formularza. Spróbuj jeszcze raz."
   },
   "Footer": {
     "rightsReserved": "Wszelkie prawa zastrzeżone",

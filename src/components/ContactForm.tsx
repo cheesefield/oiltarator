@@ -1,13 +1,26 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import "../css/contactForm.css";
 import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
   const t = useTranslations("ContactForm");
-  const [state, handleSubmit] = useForm("manwypda");
+  const [state, handleSubmit] = useForm(`${process.env.NEXT_PUBLIC_FORM_API}`);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setFailed(false); // Reset failed state on success
+    }
+
+    if (Array.isArray(state.errors) && state.errors.length > 0) {
+      setFailed(true);
+      const timer = setTimeout(() => setFailed(false), 5000); // Show failure message for 5 seconds
+      return () => clearTimeout(timer);
+    }
+  }, [state]);
 
   if (state.submitting) {
     return <p>{t("submitting")}</p>;
@@ -75,6 +88,10 @@ export default function ContactForm() {
           </button>
         </div>
       </form>
+
+      {failed && (
+        <p className="error-message">{t("failure")}</p> // Display failure message for 5 seconds
+      )}
     </div>
   );
 }

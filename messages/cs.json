@@ -75,7 +75,8 @@
     "email": "E-mail",
     "message": "Zpráva",
     "messagePlaceholder": "Napište nám zprávu!",
-    "send": "Odeslat"
+    "send": "Odeslat",
+    "failure": "Jejda! Váš formulář se nepodařilo odeslat. Zkuste to prosím znovu."
   },
   "Footer": {
     "rightsReserved": "Všechna práva vyhrazena",
