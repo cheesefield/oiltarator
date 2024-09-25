@@ -11,6 +11,7 @@ import vozitko from "../images/vozitko.jpg";
 import vozitko2 from "../images/vozitko2.jpg";
 import olej from "../images/olej.jpg";
 import kamiony from "../images/kamiony.jpg";
+import hodne_kamionu from "../images/hodne_kamionu.jpeg";
 
 const images = [
   {
@@ -77,6 +78,11 @@ const images = [
     id: 13,
     thumbnail: olej,
     alt: "Gallery Image 13",
+  },
+  {
+    id: 14,
+    thumbnail: hodne_kamionu,
+    alt: "Gallery Image 14",
   },
 ];
 

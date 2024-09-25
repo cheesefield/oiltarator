@@ -38,7 +38,7 @@ export default function LeafletMap() {
     <MapContainer
       className="map"
       center={centerPos}
-      zoom={7}
+      zoom={6}
       scrollWheelZoom={false}
       style={{ height: "500px", width: "100%" }} // Adjusting the map style
     >
