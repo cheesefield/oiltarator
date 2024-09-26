@@ -3,6 +3,10 @@ import "./style.css";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 
+// Analytics Vercel
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
+
 //i18n
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
@@ -38,6 +42,8 @@ export default async function LocaleLayout({
           {children}
           <Footer />
         </NextIntlClientProvider>
+        <SpeedInsights />
+        <Analytics />;
       </body>
     </html>
   );
