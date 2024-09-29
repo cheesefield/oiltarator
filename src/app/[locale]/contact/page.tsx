@@ -15,6 +15,9 @@ export async function generateMetadata({
   return {
     title: t("contact.title"),
     description: t("contact.description"),
+    alternates: {
+      canonical: `/${locale}/contact`,
+    },
   };
 }
 

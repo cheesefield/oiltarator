@@ -11,6 +11,9 @@ export async function generateMetadata({
   return {
     title: t("gallery.title"),
     description: t("gallery.description"),
+    alternates: {
+      canonical: `/${locale}/gallery`,
+    },
   };
 }
 

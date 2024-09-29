@@ -19,6 +19,9 @@ export async function generateMetadata({
   return {
     title: t("homepage.title"),
     description: t("homepage.description"),
+    alternates: {
+      canonical: `/${locale}`,
+    },
   };
 }
 
