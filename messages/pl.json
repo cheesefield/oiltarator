@@ -41,12 +41,13 @@
     "showroomTitle": "Jak to tutaj wygląda",
     "seeAllPictures": "Zobacz wszystkie zdjęcia",
     "companyDescription": "OilTarator s.r.o. dysponuje nowoczesnym zapleczem technicznym o pojemności magazynowej do 1 300 ton. Nasza siedziba znajduje się w Ostrawie, około 20 km od granicy z Polską, blisko zjazdu z autostrady, co znacznie ułatwia organizację transportu. Jako firma oferujemy również usługi magazynowania i przeładunku towarów.",
-    "greeting": "Zapraszamy do współpracy. Chętnie odpowiemy na wszystkie Twoje pytania."
+    "greeting": "Zapraszamy do współpracy. Chętnie odpowiemy na wszystkie Twoje pytania.",
+    "arrowAlt": "Strzałka"
   },
   "Banner": {
     "imageAlt": "Nowy sklad krupka",
     "titleHighlight": "NOWA LOKALIZACJA",
-    "title": "Lepsze ceny dla Ciebie",
+    "title": "Lepsze ceny dla Ciebie!",
     "description": "Otworzyliśmy nową placówkę bliżej Ciebie! Pozwoli nam to na szybszą dostawę i obniżenie cen naszych olejów. Skorzystaj z naszych wspaniałych ofert i ciesz się jeszcze bardziej wygodnymi zakupami!",
     "buttonText": "Pokaż mapę"
   },

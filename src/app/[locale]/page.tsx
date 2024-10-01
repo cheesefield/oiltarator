@@ -3,11 +3,13 @@ import hlavni_brana from "@/images/hlavni_brana.jpeg";
 import sunflower from "@/images/sunflower_oil_desk.jpeg";
 import soybean from "@/images/soybean_oil_desk.jpeg";
 import rapeseed from "@/images/rapeseed_oil_desk.jpeg";
+import arrow from "@/images/arrow.svg";
 import Image from "next/image";
 import Banner from "@/components/Banner";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
+import Button from "@/components/Button";
 
 export async function generateMetadata({
   params: { locale },
@@ -41,8 +43,11 @@ export default function Homepage() {
         <div className="homepage">
           <h1>{t("companyName")}</h1>
           <h3>{t("slogan")}</h3>
+          <div className="arrow">
+            <Image src={arrow.src} alt={t("arrowAlt")} height={5} width={5} />
+          </div>
           <Link href="/contact">
-            <button type="button">{t("contactButton")}</button>
+            <Button>{t("contactButton")}</Button>
           </Link>
         </div>
       </section>

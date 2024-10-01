@@ -82,17 +82,8 @@
   display: inline-block;
   margin-top: 0.8rem;
   padding: 10px 20px;
-  color: var(--white);
-  background-color: var(--darkblue);
-  border: var(--black) 2px solid;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.7s ease;
-}
-
-.submit-button:hover {
-  color: var(--black);
-  background-color: var(--blue);
-  padding: 10px 25px;
+  transition: all 0.7s ease-in-out;
 }

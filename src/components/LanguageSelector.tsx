@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FaGlobe } from "react-icons/fa";
-import "../css/button.css"; // css
 import { usePathname } from "next/navigation";
 import { Link } from "@/i18n/routing";
 

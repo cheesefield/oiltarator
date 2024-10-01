@@ -41,12 +41,13 @@
     "showroomTitle": "Jak to tu vypadá",
     "seeAllPictures": "Zobrazit všechny obrázky",
     "companyDescription": "OilTarator s.r.o. má moderní technické zařízení s kapacitou skladování až 1 300 tun. Naše základna se nachází v Ostravě, cca 20 km od polské hranice, poblíž výjezdu na dálnici, což usnadňuje organizaci dopravy. Jako firma také poskytujeme skladování zboží a překládací služby.",
-    "greeting": "Zveme vás ke spolupráci. Rádi vám zodpovíme všechny vaše dotazy."
+    "greeting": "Zveme vás ke spolupráci. Rádi vám zodpovíme všechny vaše dotazy.",
+    "arrowAlt": "Šipka"
   },
   "Banner": {
     "imageAlt": "Nový sklad krupka",
     "titleHighlight": "NOVÁ LOKACE",
-    "title": "Lepší ceny pro vás",
+    "title": "Lepší ceny pro vás!",
     "description": "Otevřeli jsme novou pobočku blíže k vám! To nám umožňuje rychlejší dodání a snížení cen našich olejů. Využijte našich skvělých nabídek a užijte si ještě pohodlnější nakupování!",
     "buttonText": "Zobrazit mapu"
   },

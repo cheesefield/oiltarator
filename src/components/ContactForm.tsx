@@ -84,7 +84,7 @@ export default function ContactForm() {
             type="submit"
             disabled={state.submitting}
           >
-            {t("send")}
+            <span>{t("send")}</span>
           </button>
         </div>
       </form>
