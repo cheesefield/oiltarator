@@ -8,8 +8,6 @@ export const metadata = {
   description:
     "Trading company operating extensively in the technical vegetable oil trade industry in Ostrava.",
   openGraph: {
-    title: "OilTarator",
-    url: "/",
     images: [
       {
         url: "/opengraph-image.png",
@@ -21,9 +19,6 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "OilTarator",
-    description:
-      "Trading company operating extensively in the technical vegetable oil trade industry in Ostrava.",
     images: ["/opengraph-image.png"],
   },
 };

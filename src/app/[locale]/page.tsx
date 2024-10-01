@@ -1,15 +1,21 @@
-import images from "@/components/ImagesData";
+import Image from "next/image";
+
+// images
 import hlavni_brana from "@/images/hlavni_brana.jpeg";
 import sunflower from "@/images/sunflower_oil_desk.jpeg";
 import soybean from "@/images/soybean_oil_desk.jpeg";
 import rapeseed from "@/images/rapeseed_oil_desk.jpeg";
 import arrow from "@/images/arrow.svg";
-import Image from "next/image";
+
+// components
 import Banner from "@/components/Banner";
+import Button from "@/components/Button";
+import images from "@/components/ImagesData";
+
+// next intl
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
-import Button from "@/components/Button";
 
 export async function generateMetadata({
   params: { locale },

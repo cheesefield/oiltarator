@@ -60,12 +60,12 @@ export default function Gallery() {
             src={images[currentIndex].thumbnail.src}
             alt={images[currentIndex].alt}
           />
-          <button className="prev" onClick={showPrevImage}>
+          <span className="prev" onClick={showPrevImage}>
             &#10094;
-          </button>
-          <button className="next" onClick={showNextImage}>
+          </span>
+          <span className="next" onClick={showNextImage}>
             &#10095;
-          </button>
+          </span>
         </div>
       )}
     </div>

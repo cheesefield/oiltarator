@@ -31,6 +31,32 @@
   }
 }
 
+@keyframes appear_spin_full {
+  from {
+    left: 0;
+    transform: translate(0, 0) rotate(20deg);
+    opacity: 0;
+  }
+  to {
+    left: 30vw;
+    transform: translate(-50%, -40%) rotate(116deg);
+    opacity: 1;
+  }
+}
+
+@keyframes appear_spin600 {
+  from {
+    left: 0;
+    transform: translate(0, 0) rotate(20deg);
+    opacity: 0;
+  }
+  to {
+    left: 40vw;
+    transform: translate(-50%, -40%) rotate(116deg);
+    opacity: 1;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -249,9 +275,10 @@ nav .btn-container-open button {
 
 .homepage .arrow img {
   position: absolute;
-  left: 30vw;
-  transform: translate(-50%, -40%) rotate(116deg);
   width: clamp(0.8rem, 10vw + 0.3rem, 7rem);
+  opacity: 0;
+  animation: appear_spin_full 1s ease-in forwards;
+  animation-delay: 2s;
 }
 
 .homepage button {
@@ -851,11 +878,8 @@ span svg {
   }
 
   .homepage .arrow img {
-    left: 40vw;
-  }
-
-  button {
-    border: 1px solid rgba(141, 243, 254, 1);
+    animation: appear_spin600 1s ease-out forwards;
+    animation-delay: 2s;
   }
 
   section .banner-flex p {
