@@ -35,7 +35,7 @@ export default function LanguageSelector() {
             locale={lng.loc as "en" | "cs" | "pl"}
             key={lng.code}
           >
-            <button
+            <span
               className="language-switch"
               key={lng.code}
               onClick={() => {
@@ -43,7 +43,7 @@ export default function LanguageSelector() {
               }}
             >
               {lng.lang}
-            </button>
+            </span>
           </Link>
         ))}
       </div>
