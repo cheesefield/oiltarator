@@ -88,6 +88,7 @@ nav img {
 nav ul {
   position: relative;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -292,6 +293,10 @@ nav .btn-container-open a:hover {
   opacity: 0;
   animation: appear_spin_full 1s ease-in forwards;
   animation-delay: 2s;
+}
+
+.homepage a {
+  width: fit-content;
 }
 
 .homepage button {

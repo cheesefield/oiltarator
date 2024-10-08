@@ -45,6 +45,7 @@ export default function Homepage() {
           alt={t("imageAlt")}
           height={325}
           width={720}
+          priority={true}
         />
         <div className="homepage">
           <h1>{t("companyName")}</h1>
