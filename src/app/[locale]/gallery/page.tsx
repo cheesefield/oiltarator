@@ -1,11 +1,13 @@
 import Gallery from "@/components/Gallery";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
+type Props = {
   params: { locale: string };
-}) {
+};
+
+export async function generateMetadata({ params: { locale } }: Props) {
+  unstable_setRequestLocale(locale);
+
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {

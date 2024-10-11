@@ -1,6 +1,6 @@
 import React from "react";
 import sklad_krupka from "../images/sklad_krupka.jpeg";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Button from "@/components/Button";

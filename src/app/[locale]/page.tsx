@@ -14,14 +14,16 @@ import images from "@/components/ImagesData";
 
 // next intl
 import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/routing";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { Link } from "@/navigation";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
+type Props = {
   params: { locale: string };
-}) {
+};
+
+export async function generateMetadata({ params: { locale } }: Props) {
+  unstable_setRequestLocale(locale);
+
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
@@ -33,7 +35,8 @@ export async function generateMetadata({
   };
 }
 
-export default function Homepage() {
+export default function Homepage({ params: { locale } }: Props) {
+  unstable_setRequestLocale(locale);
   const t = useTranslations("Homepage");
 
   return (

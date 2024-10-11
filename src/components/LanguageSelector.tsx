@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaGlobe } from "react-icons/fa";
-import { usePathname } from "next/navigation";
-import { Link } from "@/i18n/routing";
+import { usePathname } from "@/navigation";
+import { Link } from "@/navigation";
 
 // Define the type for the language object
 type Language = {
