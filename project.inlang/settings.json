@@ -10,6 +10,6 @@
     "https://cdn.jsdelivr.net/npm/@inlang/message-lint-rule-without-source@latest/dist/index.js"
   ],
   "plugin.inlang.nextIntl": {
-    "pathPattern": "./messages/{languageTag}.json"
+    "pathPattern": "./src/messages/{languageTag}.json"
   }
 }

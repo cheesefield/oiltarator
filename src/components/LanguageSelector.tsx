@@ -23,7 +23,7 @@ export default function LanguageSelector() {
   const openGlobe = (): void => setGlobe(!globe);
 
   const pathname = usePathname();
-  const pagePath = pathname?.split("/")[2] ?? "";
+  const pagePath = pathname?.split("/")[1] ?? "";
 
   return (
     <div>
