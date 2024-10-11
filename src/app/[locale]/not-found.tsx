@@ -22,9 +22,14 @@ export default function NotFound() {
   const t = useTranslations("404Page");
 
   return (
-    <main className="error_page">
-      <Image src={oil_factory.src} fill alt="Oil factory background" />
-      <section>
+    <main className="main">
+      <Image
+        src={oil_factory.src}
+        fill
+        alt="Oil factory background"
+        className="oil_error_page"
+      />
+      <section className="error_page">
         <h1> {t("title")}</h1>
         <p>{t("description")}</p>
         <a href="/">

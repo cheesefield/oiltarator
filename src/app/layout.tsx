@@ -9,7 +9,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    images: "/og-image.png",
+    images: "/opengraph-image.png",
   },
 };
 
