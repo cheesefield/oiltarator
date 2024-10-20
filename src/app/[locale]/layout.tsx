@@ -34,6 +34,11 @@ export async function generateMetadata({ params: { locale } }: Props) {
     description: t("homepage.description"), // Fallback for 404 page
     alternates: {
       canonical: `/${locale}`, // Canonical URL for SEO
+      languages: {
+        en: "/en",
+        pl: "/pl",
+        cs: "/cs",
+      },
     },
   };
 }
